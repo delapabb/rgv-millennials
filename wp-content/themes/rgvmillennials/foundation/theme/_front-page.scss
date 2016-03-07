@@ -1,0 +1,164 @@
+.home {
+
+	.hero {
+		background-repeat:no-repeat!important;
+		background-size:cover!important;
+		background-position:center!important;
+
+		padding:$large-rem 0rem;
+
+		text-align:center;
+
+		.rgvm-logo {
+			margin-bottom:$large-rem;
+			height:180px;
+			@include breakpoint(large) {
+				height:270px;
+			}
+			@include breakpoint(xlarge) {
+				height:360px;
+			}
+		}
+
+		.tagline {
+			max-width:rem-calc(594);
+			padding:0rem $normal-rem 0rem $normal-rem;
+			margin-left:auto;
+			margin-right:auto;
+			color:$white;
+		}
+	}
+
+	.millennial-banner {
+		padding:$large-rem 0rem $large-rem 0rem;
+		background:url('images/millennial-rays-01.png') $primary-color fixed;
+
+		@include advent-pro-700;
+		font-size:$medium-rem;
+		text-align:center;
+		color:$white;
+
+		//text-transform:uppercase;
+
+		p {
+			@include breakpoint(xlarge) {
+				font-size:$large-rem;
+				//margin:-($large-rem / 2) 0rem;
+			}
+			@include breakpoint(xxlarge) {
+				font-size:$xlarge-rem;
+				//margin:-($xlarge-rem / 2) 0rem;
+			}
+			@include breakpoint(xxxlarge) {
+				font-size:$xxlarge-rem;
+				//margin:-($xxlarge-rem / 2) 0rem;
+			}
+		}
+	}
+
+	.event-teaser {
+		padding:$large-rem 0rem $large-rem 0rem;
+		background:$secondary-color;
+		color:$white;
+		text-align:center;
+		h2 {
+			text-transform:uppercase;
+			color:$success-color;
+		}
+		h3 {
+			@include roboto-300;
+		}
+		.event-details {
+			margin:0rem 0rem $normal-rem 0rem;
+		}
+		.button {
+			@include custom-button($white, $secondary-color);
+		}
+	}
+
+	.post.teaser {
+		background:$light-gray;
+		padding-bottom:$half-gutter;
+		@include breakpoint(xlarge) {
+			padding-bottom:$gutter;
+			padding-right:$half-gutter;
+			padding-left:$half-gutter
+		}
+
+		text-align:center;
+		@include breakpoint(xxxlarge) {
+			padding-bottom:$double-gutter;
+			text-align:left;
+			.share-links {
+				text-align:right;
+			}
+		}
+
+		h2 {
+			@include section-title;
+		}
+
+		.get-involved {
+			article {
+				@include content;
+				.article-image {
+					min-height:rem-calc(430);
+					padding:$half-gutter;
+					@include breakpoint(xlarge) {
+						padding:$gutter;
+					}
+
+					background:$black;
+					color:$white;
+
+					h3 {
+						@include breakpoint(xxxlarge) {
+							margin-bottom:0rem;
+						}
+					}
+					.date {
+						font-weight:700;
+					}
+					.excerpt {
+						margin-right:auto;
+						margin-left:auto;
+						max-width:rem-calc(396);
+						@include breakpoint(xxxlarge) {
+							margin-left:0rem;
+							margin-right:0rem;
+						}
+					}
+					.button {
+						@include custom-button($white, $black);
+					}
+				}
+
+			}
+		}
+		
+		.reach-out {
+			aside {
+				.links {
+					padding:$half-gutter $half-gutter 0rem $half-gutter;
+					background:url('images/millennial-rays-02.png') $primary-color;
+					border:1px solid transparent;
+					.button {
+						margin-bottom:$normal-rem;
+						@include custom-button($white, $black);
+						color:$black;
+						@include button-expand(true);
+						@include breakpoint(xlarge) {
+							@include button-expand(fale);
+							width:rem-calc(200);
+							margin-left:auto;
+							margin-right:auto;
+						}
+						@include breakpoint(xxxlarge) {
+							@include button-expand(true);
+						}
+					}
+				}
+			}
+		}
+	}
+}

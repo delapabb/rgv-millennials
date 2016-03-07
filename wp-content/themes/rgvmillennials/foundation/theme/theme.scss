@@ -1,0 +1,65 @@
+$small-rem:rem-calc(9);
+$normal-rem:rem-calc(18);
+$medium-rem:rem-calc(27);
+$large-rem:rem-calc(36);
+$xlarge-rem:rem-calc(45);
+$xxlarge-rem:rem-calc(54);
+$xxxlarge-rem:rem-calc(63);
+
+
+$gutter:rem-calc(map-get($grid-column-gutter, medium));
+$half-gutter:($gutter / 2);
+$double-gutter:($gutter * 2);
+
+/* Typography */
+
+body {
+	font-size:$normal-rem;
+}
+
+@mixin advent-pro-700 {
+	font-family:'Advent Pro', sans-serif;
+	font-weight:700;
+}
+
+@mixin advent-pro-400 {
+	font-family:'Advent Pro', sans-serif;
+	font-weight:400;
+}
+
+@mixin roboto-300 {
+	font-family:'Roboto Condensed', sans-serif;
+	font-weight:300;
+}
+
+@mixin roboto-700 {
+	font-family:'Roboto Condensed', sans-serif;
+	font-weight:700;
+}
+
+// Return veritcal rhythm for content typography
+@mixin content { 
+	h1, h2, h3, h4, h5, h6 {
+		font-size:$large-rem;
+		line-height:1.3333;
+		font-weight:400;
+		margin:0rem 0rem $normal-rem 0rem;
+	}
+	p, .button {
+		line-height:1.6666;
+		margin:0rem 0rem $normal-rem 0rem;
+	}
+}
+
+@mixin section-title {
+	text-transform:uppercase;
+	font-size:$large-rem;
+	line-height:1;
+	margin:$large-rem 0rem $small-rem 0rem;
+}
+
+@import 'utilities';
+@import 'components';
+@import 'template';
+@import 'front-page';
+@import 'award-application';

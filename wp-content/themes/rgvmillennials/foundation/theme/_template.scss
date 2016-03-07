@@ -1,0 +1,99 @@
+.home.logged-out, .error404 {
+	background:$black;
+	#sb-site {
+		background:$black;
+	}
+	.landing {
+		padding:$large-rem;
+		text-align:center;
+		color:$white;
+		.rgvm-logo {
+			height:360px;
+			margin-bottom:$normal-rem;
+		}
+	}
+}
+
+#sb-site {
+	margin-top:$xxlarge-rem;
+
+	.sb-active-left & {
+		margin-left:-1px;
+	}
+}
+
+.main-menu {
+	box-sizing:border-box;
+	height:$xxlarge-rem;
+	border-bottom:2px solid $accent-gray;
+
+	background:$white;
+
+	@include stick-to-top(wide);
+
+	nav {
+		ul.menu {
+			text-align:center;
+			& > li {
+			display:inline-block;
+				& > a {
+					padding:$normal-rem;
+
+					font-size:$normal-rem;
+					color:$black;
+					@include advent-pro-700;
+					text-transform:uppercase;
+
+					&:hover {
+						color:$primary-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.mobile-nav-bar {
+	box-sizing:border-box;
+	height:$xxlarge-rem;
+	border-bottom:2px solid $accent-gray;
+
+	background:$white;
+
+	@include stick-to-top(wide);
+
+	.sb-active-left & {
+		margin-left:-1px;
+	}
+
+	padding:$small-rem;
+	#mobile-nav-icon {
+		height:36px;
+		html.sb-active-left & {
+			fill:$primary-color;
+		}
+	}
+}
+
+nav.drawer-menu {
+	ul.menu {
+		li {
+			a {
+				padding:$medium-rem;
+				color:$white;
+				@include advent-pro-700;
+				text-transform:uppercase;
+				&:hover {
+					color:$white;
+					background:$secondary-color;
+				}
+			}
+		}
+	}
+}
+
+.site-footer {
+	background:$black;
+	padding:$gutter $half-gutter $gutter $half-gutter;
+	text-align:center;
+}

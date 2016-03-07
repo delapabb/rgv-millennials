@@ -1,0 +1,86 @@
+.page-template-award-application {
+	overflow-x:visible;
+	.page-header {
+		padding:$large-rem;
+		background: #57B3C2;
+		.rgvm-logo {
+			height:252px;
+		}
+	}
+	.page-content {
+		@include content;
+		.application-sidebar {
+			@include content;
+			.button {
+				margin-top:$normal-rem;
+				color:$white;
+				background:$primary-color;
+			}
+		}
+		padding:$gutter 0rem;
+		@include breakpoint(xlarge) {
+			padding:$gutter $half-gutter;
+		}
+		.ninja-forms-field-error,
+		.ninja-forms-error-msg {
+			color:$primary-color;
+			margin:-0.5rem 0rem $normal-rem 0rem;
+		}
+		#ninja_forms_form_5 {
+			@include breakpoint (xlarge) {
+				#ninja_forms_field_7_div_wrap {
+					float: left;
+				    width: 50%;
+				    padding-right: $normal-rem;
+				}
+				#ninja_forms_field_8_div_wrap {
+					float: left;
+	    			width: 50%;
+				}
+				#ninja_forms_field_9_div_wrap {
+					width: 50%;
+	    			padding-right: 20px;
+				}
+				#ninja_forms_field_12_div_wrap,
+				#ninja_forms_field_13_div_wrap {
+					float: left;
+				    width: 33%;
+				    padding-right: 20px;
+				}
+				#ninja_forms_field_14_div_wrap {
+					float: left;
+				    width: 33%;
+				    margin-bottom: 20px;
+				}
+			}
+			textarea {
+				min-height: rem-calc(126);
+			}
+			#ninja_forms_field_30 {
+				min-height: rem-calc(288);
+  				margin-bottom: 0px;
+			}
+			#ninja_forms_field_30_counter {
+				margin-top:$small-rem;
+				text-align: right;
+  				color: $primary-color;
+			}
+			input[type=file] {
+				padding: 10px;
+  				background: #eee;
+			}
+			input[type=submit] {
+				  border: 0px;
+				  background: $primary-color;
+				  padding: $small-rem $normal-rem;
+				  color: $white;
+				  @include advent-pro-700;
+				  text-transform: uppercase;
+				  margin-top: $normal-rem;
+			}
+		}
+		.powered-by {
+			background:$black;
+		}
+	}
+}

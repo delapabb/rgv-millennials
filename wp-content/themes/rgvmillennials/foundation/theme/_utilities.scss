@@ -1,0 +1,37 @@
+/* Top Sticky */
+
+@mixin stick-to-top($wide) {
+	top:0;
+	@if $wide == 'wide' {
+		left:0;
+		right:0;	
+	}
+	position: fixed;
+	z-index: 99999;
+}
+
+/* Responsively Line-Breaking Spans */
+
+$ranges: (down only);
+
+p.linebreak-spans span {
+	display:block;
+}
+
+@each $breakpoint-class in $breakpoint-classes {
+	@include breakpoint ($breakpoint-class) {
+		p.linebreak-spans-on-#{$breakpoint-class} span {
+			display:block;
+		}
+	}
+	@each $range in $ranges {
+		@if $breakpoint-class == 'small' and $range == 'down' {
+		} @else {
+			@include breakpoint ($breakpoint-class $range) {
+				p.linebreak-spans-on-#{$breakpoint-class}-#{$range} span {
+					display:block;
+				}
+			}
+		}
+	}
+}
