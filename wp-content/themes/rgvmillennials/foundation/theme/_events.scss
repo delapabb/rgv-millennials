@@ -1,0 +1,35 @@
+.single-events {
+	.hero-banner {
+		&.image-background {
+			@include background-image-cover;
+		}
+		text-align:center;
+		color:$white;
+		a {
+			color:$white;
+			&:hover {
+				color:$white;
+			}
+		}
+		.map-link {
+			text-decoration:underline;
+		}
+		.image-color {
+			min-height:rem-calc(468);
+			padding:$large-rem 0rem;
+			background:rgba(0,0,0,.80);
+		}
+		h1 {
+			@include advent-pro-400;
+		}
+		.intro-text {
+			margin-top:$normal-rem;
+			@include center-lane;
+			
+		}
+		.button {
+			margin-top:$normal-rem;
+			@include custom-button($white, $black);
+		}
+	}
+}

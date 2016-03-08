@@ -10,6 +10,14 @@
 	z-index: 99999;
 }
 
+/* Inline Background Hero Images Are Set To Cover */
+
+@mixin background-image-cover {
+	background-repeat:no-repeat!important;
+	background-size:cover!important;
+	background-position:center!important;
+}
+
 /* Responsively Line-Breaking Spans */
 
 $ranges: (down only);
@@ -34,4 +42,12 @@ p.linebreak-spans span {
 			}
 		}
 	}
+}
+
+/* Special widths & spacings */
+
+@mixin center-lane {
+	max-width:rem-calc(594);
+	margin-left:auto;
+	margin-right:auto;
 }

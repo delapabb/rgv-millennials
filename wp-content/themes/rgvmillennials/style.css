@@ -5270,6 +5270,7 @@ body {
   font-size: 1.125rem; }
 
 /* Top Sticky */
+/* Inline Background Hero Images Are Set To Cover */
 /* Responsively Line-Breaking Spans */
 p.linebreak-spans span {
   display: block; }
@@ -5340,6 +5341,7 @@ p.linebreak-spans-on-xxxlarge-down span {
   p.linebreak-spans-on-xxxlarge-only span {
     display: block; } }
 
+/* Special widths & spacings */
 /* Buttons */
 .button {
   font-family: 'Advent Pro', sans-serif;
@@ -5367,15 +5369,15 @@ p.linebreak-spans-on-xxxlarge-down span {
       .menu.share-links li a img {
         margin-top: -0.125rem; }
 
-.home.logged-out, .error404 {
+.home.logged-out, .single-events.logged-out, .error404 {
   background: #333333; }
-  .home.logged-out #sb-site, .error404 #sb-site {
+  .home.logged-out #sb-site, .single-events.logged-out #sb-site, .error404 #sb-site {
     background: #333333; }
-  .home.logged-out .landing, .error404 .landing {
+  .home.logged-out .landing, .single-events.logged-out .landing, .error404 .landing {
     padding: 2.25rem;
     text-align: center;
     color: #ffffff; }
-    .home.logged-out .landing .rgvm-logo, .error404 .landing .rgvm-logo {
+    .home.logged-out .landing .rgvm-logo, .single-events.logged-out .landing .rgvm-logo, .error404 .landing .rgvm-logo {
       height: 360px;
       margin-bottom: 1.125rem; }
 
@@ -5458,9 +5460,9 @@ nav.drawer-menu ul.menu li a {
         height: 360px; } }
   .home .hero .tagline {
     max-width: 37.125rem;
-    padding: 0rem 1.125rem 0rem 1.125rem;
     margin-left: auto;
     margin-right: auto;
+    padding: 0rem 1.125rem 0rem 1.125rem;
     color: #ffffff; }
 
 .home .millennial-banner {
@@ -5670,3 +5672,37 @@ nav.drawer-menu ul.menu li a {
       margin-top: 1.125rem; }
     .page-template-award-application .page-content .powered-by {
       background: #333333; }
+
+.single-events .hero-banner {
+  text-align: center;
+  color: #ffffff; }
+  .single-events .hero-banner.image-background {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important; }
+  .single-events .hero-banner a {
+    color: #ffffff; }
+    .single-events .hero-banner a:hover {
+      color: #ffffff; }
+  .single-events .hero-banner .map-link {
+    text-decoration: underline; }
+  .single-events .hero-banner .image-color {
+    min-height: 29.25rem;
+    padding: 2.25rem 0rem;
+    background: rgba(0, 0, 0, 0.8); }
+  .single-events .hero-banner h1 {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 400; }
+  .single-events .hero-banner .intro-text {
+    margin-top: 1.125rem;
+    max-width: 37.125rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .single-events .hero-banner .button {
+    margin-top: 1.125rem;
+    border: 2px solid #ffffff;
+    color: #ffffff; }
+    .single-events .hero-banner .button:hover {
+      background: #ffffff;
+      color: #333333;
+      border: 2px solid #ffffff; }

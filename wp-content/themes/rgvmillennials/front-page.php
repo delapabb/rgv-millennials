@@ -32,7 +32,7 @@
 						<p>March 23, 2016</p>
 						<p>Edinburg Conference Center at Renaissance</p>
 					</div>
-					<a class="button margin-half-top" href="#">Register Now</a>
+					<a class="button" href="#">Register Now</a>
 				</div>
 			</div>
 		</section>
