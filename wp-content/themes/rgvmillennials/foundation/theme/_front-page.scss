@@ -34,8 +34,6 @@
 		text-align:center;
 		color:$white;
 
-		//text-transform:uppercase;
-
 		p {
 			@include breakpoint(xlarge) {
 				font-size:$large-rem;

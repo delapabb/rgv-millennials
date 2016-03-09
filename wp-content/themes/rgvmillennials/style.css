@@ -18,7 +18,7 @@ RGV Millennials is based on Underscores http://underscores.me/, (C) 2012-2015 Au
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
 @import url(https://fonts.googleapis.com/css?family=Advent+Pro:400,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,700);
 /**
  * Foundation for Sites by ZURB
  * Version 6.2.0
@@ -5269,6 +5269,10 @@ html.sb-static .sb-slidebar,
 body {
   font-size: 1.125rem; }
 
+ul.unstyled-list {
+  list-style-type: none;
+  margin-left: 0rem; }
+
 /* Top Sticky */
 /* Inline Background Hero Images Are Set To Cover */
 /* Responsively Line-Breaking Spans */
@@ -5529,7 +5533,13 @@ nav.drawer-menu ul.menu li a {
     line-height: 1.3333;
     font-weight: 400;
     margin: 0rem 0rem 1.125rem 0rem; }
-  .home .post.teaser .get-involved article p, .home .post.teaser .get-involved article .button {
+  .home .post.teaser .get-involved article p {
+    line-height: 1.3333;
+    margin: 0rem 0rem 1.125rem 0rem; }
+    .home .post.teaser .get-involved article p.title {
+      margin-bottom: 0rem;
+      font-weight: 700; }
+  .home .post.teaser .get-involved article .button {
     line-height: 1.6666;
     margin: 0rem 0rem 1.125rem 0rem; }
   .home .post.teaser .get-involved article .article-image {
@@ -5607,7 +5617,13 @@ nav.drawer-menu ul.menu li a {
       line-height: 1.3333;
       font-weight: 400;
       margin: 0rem 0rem 1.125rem 0rem; }
-    .page-template-award-application .page-content p, .page-template-award-application .page-content .button {
+    .page-template-award-application .page-content p {
+      line-height: 1.3333;
+      margin: 0rem 0rem 1.125rem 0rem; }
+      .page-template-award-application .page-content p.title {
+        margin-bottom: 0rem;
+        font-weight: 700; }
+    .page-template-award-application .page-content .button {
       line-height: 1.6666;
       margin: 0rem 0rem 1.125rem 0rem; }
     .page-template-award-application .page-content .application-sidebar h1, .page-template-award-application .page-content .application-sidebar h2, .page-template-award-application .page-content .application-sidebar h3, .page-template-award-application .page-content .application-sidebar h4, .page-template-award-application .page-content .application-sidebar h5, .page-template-award-application .page-content .application-sidebar h6 {
@@ -5615,7 +5631,13 @@ nav.drawer-menu ul.menu li a {
       line-height: 1.3333;
       font-weight: 400;
       margin: 0rem 0rem 1.125rem 0rem; }
-    .page-template-award-application .page-content .application-sidebar p, .page-template-award-application .page-content .application-sidebar .button {
+    .page-template-award-application .page-content .application-sidebar p {
+      line-height: 1.3333;
+      margin: 0rem 0rem 1.125rem 0rem; }
+      .page-template-award-application .page-content .application-sidebar p.title {
+        margin-bottom: 0rem;
+        font-weight: 700; }
+    .page-template-award-application .page-content .application-sidebar .button {
       line-height: 1.6666;
       margin: 0rem 0rem 1.125rem 0rem; }
     .page-template-award-application .page-content .application-sidebar .button {
@@ -5673,6 +5695,12 @@ nav.drawer-menu ul.menu li a {
     .page-template-award-application .page-content .powered-by {
       background: #333333; }
 
+.single-events h2 {
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  line-height: 1;
+  margin: 2.25rem 0rem 0.5625rem 0rem; }
+
 .single-events .hero-banner {
   text-align: center;
   color: #ffffff; }
@@ -5692,7 +5720,9 @@ nav.drawer-menu ul.menu li a {
     background: rgba(0, 0, 0, 0.8); }
   .single-events .hero-banner h1 {
     font-family: 'Advent Pro', sans-serif;
-    font-weight: 400; }
+    font-weight: 400;
+    color: #ffd400;
+    font-size: 2.8125rem; }
   .single-events .hero-banner .intro-text {
     margin-top: 1.125rem;
     max-width: 37.125rem;
@@ -5706,3 +5736,46 @@ nav.drawer-menu ul.menu li a {
       background: #ffffff;
       color: #333333;
       border: 2px solid #ffffff; }
+
+.single-events .agenda {
+  padding: 0rem 0rem 1.125rem 0rem;
+  text-align: center; }
+  @media screen and (min-width: 37.5em) {
+    .single-events .agenda {
+      padding: 0rem 1.125rem 2.25rem 1.125rem;
+      text-align: left; } }
+  .single-events .agenda h2 {
+    color: #007eff; }
+  .single-events .agenda .schedule {
+    padding: 1.125rem 1.125rem 0rem 1.125rem;
+    border-bottom: 1px solid transparent;
+    background: #007eff;
+    color: #ffffff; }
+    @media screen and (min-width: 37.5em) {
+      .single-events .agenda .schedule {
+        padding: 2.25rem 2.25rem 0rem 2.25rem; } }
+    .single-events .agenda .schedule h1, .single-events .agenda .schedule h2, .single-events .agenda .schedule h3, .single-events .agenda .schedule h4, .single-events .agenda .schedule h5, .single-events .agenda .schedule h6 {
+      font-size: 2.25rem;
+      line-height: 1.3333;
+      font-weight: 400;
+      margin: 0rem 0rem 1.125rem 0rem; }
+    .single-events .agenda .schedule p {
+      line-height: 1.3333;
+      margin: 0rem 0rem 1.125rem 0rem; }
+      .single-events .agenda .schedule p.title {
+        margin-bottom: 0rem;
+        font-weight: 700; }
+    .single-events .agenda .schedule .button {
+      line-height: 1.6666;
+      margin: 0rem 0rem 1.125rem 0rem; }
+    .single-events .agenda .schedule .entry {
+      margin-bottom: 2.25rem; }
+      .single-events .agenda .schedule .entry ul.participant-list {
+        list-style-type: none;
+        margin-left: 0rem;
+        margin-bottom: 1.125rem; }
+        .single-events .agenda .schedule .entry ul.participant-list li.name {
+          margin-bottom: -0.375rem; }
+        .single-events .agenda .schedule .entry ul.participant-list li.detail {
+          font-style: italic;
+          font-size: 0.875rem; }

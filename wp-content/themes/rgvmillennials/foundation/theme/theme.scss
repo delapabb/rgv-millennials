@@ -1,4 +1,5 @@
 $small-rem:rem-calc(9);
+$slight-rem:rem-calc(14);
 $normal-rem:rem-calc(18);
 $medium-rem:rem-calc(27);
 $large-rem:rem-calc(36);
@@ -37,6 +38,11 @@ body {
 	font-weight:700;
 }
 
+ul.unstyled-list {
+	list-style-type:none;
+	margin-left:0rem;
+}
+
 // Return veritcal rhythm for content typography
 @mixin content { 
 	h1, h2, h3, h4, h5, h6 {
@@ -45,7 +51,15 @@ body {
 		font-weight:400;
 		margin:0rem 0rem $normal-rem 0rem;
 	}
-	p, .button {
+	p {
+		line-height:1.3333;
+		margin:0rem 0rem $normal-rem 0rem;
+		&.title {
+			margin-bottom:0rem;
+			font-weight:700;
+		}
+	}
+	.button {
 		line-height:1.6666;
 		margin:0rem 0rem $normal-rem 0rem;
 	}

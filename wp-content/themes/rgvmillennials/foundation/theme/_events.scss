@@ -1,4 +1,7 @@
 .single-events {
+	h2 {
+		@include section-title;
+	}
 	.hero-banner {
 		&.image-background {
 			@include background-image-cover;
@@ -21,6 +24,8 @@
 		}
 		h1 {
 			@include advent-pro-400;
+			color:$success-color;
+			font-size:$xlarge-rem;
 		}
 		.intro-text {
 			margin-top:$normal-rem;
@@ -30,6 +35,47 @@
 		.button {
 			margin-top:$normal-rem;
 			@include custom-button($white, $black);
+		}
+	}
+	.agenda {
+		padding:0rem 0rem $half-gutter 0rem;
+		text-align:center;
+
+		@include breakpoint(xlarge) {
+			padding:0rem $half-gutter $gutter $half-gutter;
+			text-align:left;
+		}
+
+		h2 { color:$secondary-color; }
+
+		.schedule {
+			padding:$half-gutter $half-gutter 0rem $half-gutter;
+			border-bottom:1px solid transparent;
+			@include breakpoint(xlarge) {
+				padding:$gutter $gutter 0rem $gutter;
+			}
+
+			background:$secondary-color;
+			color:$white;
+
+			@include content;
+
+			.entry {
+				margin-bottom:$large-rem;
+				ul.participant-list {
+					list-style-type:none;
+					margin-left:0rem;
+					margin-bottom:$normal-rem;
+					li.name {
+						margin-bottom:-(rem-calc(6));
+					}
+					li.detail {
+						font-style:italic;
+						font-size:$slight-rem;
+
+					}
+				}
+			}
 		}
 	}
 }

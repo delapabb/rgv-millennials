@@ -51,6 +51,114 @@
 				</div>
 			</div>
 
+			<div class="agenda">
+				<section class="column row">
+					<header>
+						<h2><?php the_field('agenda_section_title') ?></h2>
+					</header>
+
+					<div class="schedule">
+						<?php if( have_rows('event_agenda') ) : while ( have_rows('event_agenda') ) : the_row(); ?>
+
+							<div class="entry">
+
+								<?php if( get_row_layout() == 'discussion_panel' ) : ?>
+
+									<h3><?php the_sub_field('discussion_panel_title') ?></h3>
+
+									<?php if (get_sub_field('discussion_panel_start_time') && get_sub_field('discussion_panel_end_time')) { ?>
+										<p class="title"><?php the_sub_field('discussion_panel_start_time') ?> to <?php the_sub_field('discussion_panel_end_time') ?></p>
+									<?php } elseif (get_sub_field('discussion_panel_start_time')) { ?>
+										<p class="title"><?php the_sub_field('discussion_panel_start_time') ?></p>
+									<?php } elseif (get_sub_field('discussion_panel_end_time')) { ?>
+										<p class="title"><?php the_sub_field('discussion_panel_end_time') ?></p>
+									<?php } ?>
+
+									<?php if (get_sub_field('discussion_panel_detail')) { ?>
+										<p><?php the_sub_field('discussion_panel_detail'); ?></p>
+									<?php } ?>
+
+									<?php if (have_rows('panelists')) : ?>
+
+										<p class="title">Panelists</p>
+
+										<ul class="participant-list">
+
+											<?php while (have_rows('panelists')) : the_row(); ?>
+
+												<li class="name"><?php the_sub_field('panelist_name'); ?></li>
+												<li class="detail"><?php the_sub_field('panelist_detail'); ?></li>
+
+											<?php endwhile; ?>
+
+										</ul>
+
+									<?php endif; ?>
+
+									<?php if (have_rows('moderators')) : ?>
+
+										<p class="title">Moderators</p>
+
+										<ul class="participant-list">
+
+											<?php while (have_rows('moderators')) : the_row(); ?>
+
+												<li class="name"><?php the_sub_field('moderator_name'); ?></li>
+												<li class="detail"><?php the_sub_field('moderator_detail'); ?></li>
+
+											<?php endwhile; ?>
+
+										</ul>
+
+									<?php endif; ?>
+
+								<?php elseif( get_row_layout() == 'presentation' ) : ?>
+								
+									<h3><?php the_sub_field('presentation_title') ?></h3>
+
+									<?php if (get_sub_field('presentation_start_time') && get_sub_field('presentation_end_time')) { ?>
+										<p class="title"><?php the_sub_field('presentation_start_time') ?> to <?php the_sub_field('presentation_end_time') ?></p>
+									<?php } elseif (get_sub_field('presentation_start_time')) { ?>
+										<p class="title"><?php the_sub_field('presentation_start_time') ?></p>
+									<?php } elseif (get_sub_field('presentation_end_time')) { ?>
+										<p class="title"><?php the_sub_field('presentation_end_time') ?></p>
+									<?php } ?>
+
+									<?php if (get_sub_field('presentation_detail')) { ?>
+										<p><?php the_sub_field('presentation_detail'); ?></p>
+									<?php } ?>
+
+									<?php if (have_rows('presenters')) : ?>
+
+										<p class="title">Presenters</p>
+
+										<ul class="participant-list">
+
+											<?php while (have_rows('presenters')) : the_row(); ?>
+
+												<li class="name"><?php the_sub_field('presenter_name'); ?></li>
+												<li class="detail"><?php the_sub_field('presenter_detail'); ?></li>
+
+											<?php endwhile; ?>
+
+										</ul>
+
+									<?php endif; ?>
+
+								</div>
+
+							<?php endif; ?>
+
+						<?php endwhile; ?>
+
+						<?php else : ?>
+							<!-- No flexible layouts were created -->
+						<?php endif; ?>
+					</div>
+
+				</section>
+			</div>
+
 		<?php endwhile; else : ?>
 
 		<?php endif; ?>
