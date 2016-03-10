@@ -1,67 +1,117 @@
 .single-events {
 	h2 {
 		@include section-title;
+		margin:$xlarge-rem 0rem;
 	}
 	.hero-banner {
-		&.image-background {
-			@include background-image-cover;
-		}
+		padding:$large-rem 0rem;
+		background:url('images/millennial-rays-03.png') fixed;
+
 		text-align:center;
 		color:$white;
+
 		a {
 			color:$white;
 			&:hover {
 				color:$white;
 			}
 		}
+
 		.map-link {
 			text-decoration:underline;
 		}
-		.image-color {
-			min-height:rem-calc(468);
-			padding:$large-rem 0rem;
-			background:rgba(0,0,0,.80);
-		}
+
 		h1 {
 			@include advent-pro-400;
 			color:$success-color;
 			font-size:$xlarge-rem;
+			@include breakpoint(xxlarge) {
+				font-size:$xxlarge-rem;
+			}
 		}
+
 		.intro-text {
 			margin-top:$normal-rem;
 			@include center-lane;
 			
 		}
+
 		.button {
 			margin-top:$normal-rem;
-			@include custom-button($white, $black);
+			@include custom-button($white, $secondary-color);
 		}
 	}
+	.main-content {
+		padding:0rem 0rem $half-gutter 0rem;
+		text-align:center;
+
+		@include breakpoint(xlarge) {
+			padding:0rem $half-gutter $gutter $half-gutter;
+		}
+
+		.content {
+			max-width:rem-calc(768);
+			margin-left:auto;
+			margin-right:auto;
+
+			@include content;
+		}
+	}
+
+	.speakers {
+		text-align:center;
+
+		@include breakpoint(xlarge) {
+			padding:0rem $half-gutter 0rem $half-gutter;
+		}
+
+		.speaker-list {
+			max-width:rem-calc(320);
+			@include breakpoint(large) {
+				max-width:rem-calc(768);
+			}
+			margin-left:auto;
+			margin-right:auto;
+
+			@include content;
+
+			.column:last-child {
+				float:none;
+				margin:auto;
+			}
+
+			.speaker {
+				min-height:rem-calc(297);
+				p.title {
+					margin-top:$small-rem;
+				}
+				.headshot {
+					max-height:rem-calc(144);
+					border-radius:50%;
+				}
+			}
+		}
+	}
+
 	.agenda {
 		padding:0rem 0rem $half-gutter 0rem;
 		text-align:center;
 
 		@include breakpoint(xlarge) {
 			padding:0rem $half-gutter $gutter $half-gutter;
-			text-align:left;
 		}
 
-		h2 { color:$secondary-color; }
-
 		.schedule {
-			padding:$half-gutter $half-gutter 0rem $half-gutter;
-			border-bottom:1px solid transparent;
-			@include breakpoint(xlarge) {
-				padding:$gutter $gutter 0rem $gutter;
-			}
-
-			background:$secondary-color;
-			color:$white;
+			max-width:rem-calc(768);
+			margin-left:auto;
+			margin-right:auto;
 
 			@include content;
 
 			.entry {
-				margin-bottom:$large-rem;
+				h3 {
+					color:$secondary-color;
+				}
 				ul.participant-list {
 					list-style-type:none;
 					margin-left:0rem;
@@ -72,10 +122,10 @@
 					li.detail {
 						font-style:italic;
 						font-size:$slight-rem;
-
 					}
 				}
 			}
 		}
 	}
+
 }

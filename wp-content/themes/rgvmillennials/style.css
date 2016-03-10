@@ -5273,6 +5273,10 @@ ul.unstyled-list {
   list-style-type: none;
   margin-left: 0rem; }
 
+p.title {
+  margin-bottom: 0rem;
+  font-weight: 700; }
+
 /* Top Sticky */
 /* Inline Background Hero Images Are Set To Cover */
 /* Responsively Line-Breaking Spans */
@@ -5536,9 +5540,6 @@ nav.drawer-menu ul.menu li a {
   .home .post.teaser .get-involved article p {
     line-height: 1.3333;
     margin: 0rem 0rem 1.125rem 0rem; }
-    .home .post.teaser .get-involved article p.title {
-      margin-bottom: 0rem;
-      font-weight: 700; }
   .home .post.teaser .get-involved article .button {
     line-height: 1.6666;
     margin: 0rem 0rem 1.125rem 0rem; }
@@ -5620,9 +5621,6 @@ nav.drawer-menu ul.menu li a {
     .page-template-award-application .page-content p {
       line-height: 1.3333;
       margin: 0rem 0rem 1.125rem 0rem; }
-      .page-template-award-application .page-content p.title {
-        margin-bottom: 0rem;
-        font-weight: 700; }
     .page-template-award-application .page-content .button {
       line-height: 1.6666;
       margin: 0rem 0rem 1.125rem 0rem; }
@@ -5634,9 +5632,6 @@ nav.drawer-menu ul.menu li a {
     .page-template-award-application .page-content .application-sidebar p {
       line-height: 1.3333;
       margin: 0rem 0rem 1.125rem 0rem; }
-      .page-template-award-application .page-content .application-sidebar p.title {
-        margin-bottom: 0rem;
-        font-weight: 700; }
     .page-template-award-application .page-content .application-sidebar .button {
       line-height: 1.6666;
       margin: 0rem 0rem 1.125rem 0rem; }
@@ -5699,30 +5694,28 @@ nav.drawer-menu ul.menu li a {
   text-transform: uppercase;
   font-size: 2.25rem;
   line-height: 1;
-  margin: 2.25rem 0rem 0.5625rem 0rem; }
+  margin: 2.25rem 0rem 0.5625rem 0rem;
+  margin: 2.8125rem 0rem; }
 
 .single-events .hero-banner {
+  padding: 2.25rem 0rem;
+  background: url("images/millennial-rays-03.png") fixed;
   text-align: center;
   color: #ffffff; }
-  .single-events .hero-banner.image-background {
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center !important; }
   .single-events .hero-banner a {
     color: #ffffff; }
     .single-events .hero-banner a:hover {
       color: #ffffff; }
   .single-events .hero-banner .map-link {
     text-decoration: underline; }
-  .single-events .hero-banner .image-color {
-    min-height: 29.25rem;
-    padding: 2.25rem 0rem;
-    background: rgba(0, 0, 0, 0.8); }
   .single-events .hero-banner h1 {
     font-family: 'Advent Pro', sans-serif;
     font-weight: 400;
     color: #ffd400;
     font-size: 2.8125rem; }
+    @media screen and (min-width: 48em) {
+      .single-events .hero-banner h1 {
+        font-size: 3.375rem; } }
   .single-events .hero-banner .intro-text {
     margin-top: 1.125rem;
     max-width: 37.125rem;
@@ -5734,26 +5727,75 @@ nav.drawer-menu ul.menu li a {
     color: #ffffff; }
     .single-events .hero-banner .button:hover {
       background: #ffffff;
-      color: #333333;
+      color: #007eff;
       border: 2px solid #ffffff; }
+
+.single-events .main-content {
+  padding: 0rem 0rem 1.125rem 0rem;
+  text-align: center; }
+  @media screen and (min-width: 37.5em) {
+    .single-events .main-content {
+      padding: 0rem 1.125rem 2.25rem 1.125rem; } }
+  .single-events .main-content .content {
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto; }
+    .single-events .main-content .content h1, .single-events .main-content .content h2, .single-events .main-content .content h3, .single-events .main-content .content h4, .single-events .main-content .content h5, .single-events .main-content .content h6 {
+      font-size: 2.25rem;
+      line-height: 1.3333;
+      font-weight: 400;
+      margin: 0rem 0rem 1.125rem 0rem; }
+    .single-events .main-content .content p {
+      line-height: 1.3333;
+      margin: 0rem 0rem 1.125rem 0rem; }
+    .single-events .main-content .content .button {
+      line-height: 1.6666;
+      margin: 0rem 0rem 1.125rem 0rem; }
+
+.single-events .speakers {
+  text-align: center; }
+  @media screen and (min-width: 37.5em) {
+    .single-events .speakers {
+      padding: 0rem 1.125rem 0rem 1.125rem; } }
+  .single-events .speakers .speaker-list {
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto; }
+    @media screen and (min-width: 30em) {
+      .single-events .speakers .speaker-list {
+        max-width: 48rem; } }
+    .single-events .speakers .speaker-list h1, .single-events .speakers .speaker-list h2, .single-events .speakers .speaker-list h3, .single-events .speakers .speaker-list h4, .single-events .speakers .speaker-list h5, .single-events .speakers .speaker-list h6 {
+      font-size: 2.25rem;
+      line-height: 1.3333;
+      font-weight: 400;
+      margin: 0rem 0rem 1.125rem 0rem; }
+    .single-events .speakers .speaker-list p {
+      line-height: 1.3333;
+      margin: 0rem 0rem 1.125rem 0rem; }
+    .single-events .speakers .speaker-list .button {
+      line-height: 1.6666;
+      margin: 0rem 0rem 1.125rem 0rem; }
+    .single-events .speakers .speaker-list .column:last-child, .single-events .speakers .speaker-list .columns:last-child {
+      float: none;
+      margin: auto; }
+    .single-events .speakers .speaker-list .speaker {
+      min-height: 18.5625rem; }
+      .single-events .speakers .speaker-list .speaker p.title {
+        margin-top: 0.5625rem; }
+      .single-events .speakers .speaker-list .speaker .headshot {
+        max-height: 9rem;
+        border-radius: 50%; }
 
 .single-events .agenda {
   padding: 0rem 0rem 1.125rem 0rem;
   text-align: center; }
   @media screen and (min-width: 37.5em) {
     .single-events .agenda {
-      padding: 0rem 1.125rem 2.25rem 1.125rem;
-      text-align: left; } }
-  .single-events .agenda h2 {
-    color: #007eff; }
+      padding: 0rem 1.125rem 2.25rem 1.125rem; } }
   .single-events .agenda .schedule {
-    padding: 1.125rem 1.125rem 0rem 1.125rem;
-    border-bottom: 1px solid transparent;
-    background: #007eff;
-    color: #ffffff; }
-    @media screen and (min-width: 37.5em) {
-      .single-events .agenda .schedule {
-        padding: 2.25rem 2.25rem 0rem 2.25rem; } }
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto; }
     .single-events .agenda .schedule h1, .single-events .agenda .schedule h2, .single-events .agenda .schedule h3, .single-events .agenda .schedule h4, .single-events .agenda .schedule h5, .single-events .agenda .schedule h6 {
       font-size: 2.25rem;
       line-height: 1.3333;
@@ -5762,20 +5804,17 @@ nav.drawer-menu ul.menu li a {
     .single-events .agenda .schedule p {
       line-height: 1.3333;
       margin: 0rem 0rem 1.125rem 0rem; }
-      .single-events .agenda .schedule p.title {
-        margin-bottom: 0rem;
-        font-weight: 700; }
     .single-events .agenda .schedule .button {
       line-height: 1.6666;
       margin: 0rem 0rem 1.125rem 0rem; }
-    .single-events .agenda .schedule .entry {
-      margin-bottom: 2.25rem; }
-      .single-events .agenda .schedule .entry ul.participant-list {
-        list-style-type: none;
-        margin-left: 0rem;
-        margin-bottom: 1.125rem; }
-        .single-events .agenda .schedule .entry ul.participant-list li.name {
-          margin-bottom: -0.375rem; }
-        .single-events .agenda .schedule .entry ul.participant-list li.detail {
-          font-style: italic;
-          font-size: 0.875rem; }
+    .single-events .agenda .schedule .entry h3 {
+      color: #007eff; }
+    .single-events .agenda .schedule .entry ul.participant-list {
+      list-style-type: none;
+      margin-left: 0rem;
+      margin-bottom: 1.125rem; }
+      .single-events .agenda .schedule .entry ul.participant-list li.name {
+        margin-bottom: -0.375rem; }
+      .single-events .agenda .schedule .entry ul.participant-list li.detail {
+        font-style: italic;
+        font-size: 0.875rem; }

@@ -43,6 +43,11 @@ ul.unstyled-list {
 	margin-left:0rem;
 }
 
+p.title {
+	margin-bottom:0rem;
+	font-weight:700;
+}
+
 // Return veritcal rhythm for content typography
 @mixin content { 
 	h1, h2, h3, h4, h5, h6 {
@@ -54,10 +59,6 @@ ul.unstyled-list {
 	p {
 		line-height:1.3333;
 		margin:0rem 0rem $normal-rem 0rem;
-		&.title {
-			margin-bottom:0rem;
-			font-weight:700;
-		}
 	}
 	.button {
 		line-height:1.6666;
