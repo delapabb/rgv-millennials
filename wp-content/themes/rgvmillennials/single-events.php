@@ -6,55 +6,77 @@
 
 			<div class="hero-banner">
 				<header class="column row">
-					<h1><?php the_title() ?></h1>
-					
-					<?php if ( get_field('event_start_date') == get_field('event_end_date') ) { ?>
-
-						<p><?php the_field('event_start_date'); ?></p>
-
-						<?php if ( get_field('event_start_time') && get_field('event_end_time') ) { ?>
-
-							<p><?php the_field('event_start_time'); ?> to <?php the_field('event_end_time'); ?></p>
-
-						<?php } ?>
-
+					<?php if ( get_the_title() ) { ?>
+						<h1><?php the_title() ?></h1>
 					<?php } else { ?>
+						<h1>RGV Millennials Event</h1>
+					<?php } ?>
+				
+					<?php if ( get_field('event_start_date') && get_field('event_end_date') ) { ?>
+						<?php if ( get_field('event_start_date') == get_field('event_end_date') ) { ?>
+							<p><?php the_field('event_start_date'); ?></p>
+						<?php } else { ?>
+							<p><?php the_field('event_start_date'); ?> to <?php the_field('event_end_date'); ?></p>
+						<?php } ?>					
+					<?php } elseif ( get_field('event_start_date') ) { ?>
+						<p><?php the_field('event_start_date'); ?></p>
+					<?php } elseif ( get_field('event_end_date') ) { ?>
+						<p><?php the_field('event_end_date'); ?></p>
+					<?php } ?>
 
-						<p><?php the_field('event_start_date'); ?> to <?php the_field('event_end_date'); ?></p>
-
+					<?php if ( get_field('event_start_time') && get_field('event_end_time') ) { ?>
+						<?php if ( get_field('event_start_time') == get_field('event_end_time') ) { ?>
+							<p><?php the_field('event_start_time'); ?></p>
+						<?php } else { ?>
+							<p><?php the_field('event_start_time'); ?> to <?php the_field('event_end_time'); ?></p>
+						<?php } ?>					
+					<?php } elseif ( get_field('event_start_time') ) { ?>
+						<p><?php the_field('event_start_time'); ?></p>
+					<?php } elseif ( get_field('event_end_time') ) { ?>
+						<p><?php the_field('event_end_time'); ?></p>
 					<?php } ?>
 
 					<?php if ( get_field('event_venue') ) { ?>
-						<?php 
-							$event_map_array = get_field('location');
-							$event_map_link = 'https://maps.google.com/maps?q=' . $event_map_array['address'];
-						?>
-						<p><a class="map-link" href="<?php echo $event_map_link ?>" target="_blank"><?php the_field('event_venue') ?></a></p>
+						<?php  	$event_map_array = get_field('location');
+								$event_map_link = 'https://maps.google.com/maps?q=' . $event_map_array['address']; ?>
+						<p><a class="map-link" href="<?php echo $event_map_link ?>" target="_blank">
+								<?php the_field('event_venue') ?>
+						</a></p>
 					<? } ?>
-					<?php if ( get_field('event_city') ) { ?><p><?php the_field('event_city') ?></p><? } ?>
-					<div class="intro-text">
-						<?php if ( get_field('event_intro_text') ) { ?><p><?php the_field('event_intro_text') ?></p><? } ?>
-					</div>
 
-					<?php if (get_field('event_intro_cta_toggle')) { ?>
-						<a class="button" href="<?php the_field('event_intro_cta_button_link') ?>" target="_blank"><?php the_field('event_intro_cta_button_text') ?></a>
+					<?php if ( get_field('event_city') ) { ?>
+						<p><?php the_field('event_city') ?></p>
+					<?php } ?>
+
+					<?php if ( get_field('event_intro_text') ) { ?>
+						<div class="intro-text">
+							<p><?php the_field('event_intro_text') ?></p>
+						</div>
+					<?php } ?>
+
+					<?php if (get_field('event_intro_cta_toggle') && get_field('event_intro_cta_button_link') && get_field('event_intro_cta_button_text') ) { ?>
+						<a class="button" href="<?php the_field('event_intro_cta_button_link') ?>" target="_blank">
+							<?php the_field('event_intro_cta_button_text') ?>
+						</a>
 					<?php } ?>
 
 				</header>
 			</div>
 
-			<div class="main-content">
-				<section class="column row">
-					<header>
-						<h2><?php the_field('main_title') ?></h2>
-					</header>
+			<?php if ( get_field('main_title') ) { ?>
+				<div class="main-content">
+					<section class="column row">
+						<header>
+							<h2><?php the_field('main_title') ?></h2>
+						</header>
 
-					<div class="content">
-						<?php the_field('main_content') ?>
-					</div>
+						<div class="content">
+							<?php the_field('main_content') ?>
+						</div>
 
-				</section>
-			</div>
+					</section>
+				</div>
+			<?php } ?>
 
 			<div class="speakers">
 				<section class="column row">
