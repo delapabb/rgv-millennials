@@ -1,4 +1,4 @@
-.home.logged-out, .single-events.logged-out, .error404 {
+.logged-out, .error404 {
 	background:$black;
 	#sb-site {
 		background:$black;
@@ -12,6 +12,10 @@
 			margin-bottom:$normal-rem;
 		}
 	}
+}
+
+.page-template-award-application {
+	background:$white;
 }
 
 #sb-site {
