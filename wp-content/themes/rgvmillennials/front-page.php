@@ -32,7 +32,7 @@
 						<p>March 23, 2016</p>
 						<p>Edinburg Conference Center at Renaissance</p>
 					</div>
-					<a class="button" href="#">Register Now</a>
+					<a class="button" href="<?php echo site_url(); ?>/events/2016-millennial-summit/">Attend The Summit</a>
 				</div>
 			</div>
 		</section>
@@ -42,20 +42,20 @@
 				<div class="small-12 xxxlarge-9 columns">
 					<div class="get-involved">
 						<header>
-							<h2>Get Involved</h2>
+							<h2>Latest</h2>
 						</header>
 						<article>
 							<div class="article-image">
 								<header>
-									<h3>2016 RGV Youth Entrepreneurship Award</h3>
+									<h3>RGV Millennial of The Year Award</h3>
 								</header>
-								<p class="date">March 1, 2016</p>
-								<p class="excerpt">Nunc congue velit in urna cursus vehicula. Etiam id consequat ipsum, id volutpat purus. Integer venenatis leo lectus, et aliquet nisl interdum at. Nullam vestibulum ipsum vel elementum feugiat.</p>
-								<a class="button" href="#">Be The First Winner</a>
+								<p class="excerpt">This year, we’ll be recognizing one Millennial at our RGV Millennial Summit on March 23, 2016. This is the official application form to be considered for the award. All applicants will be highlighted at the summit, and the deadline for application is March 16, 2016.</p>
+								<a class="button" href="<?php echo site_url(); ?>/2016millennial/">Highlight Your Work</a>
 							</div>
+
 							<ul class="menu share-links">
 								<li>Share This</li>
-								<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/icon-facebook.svg" alt="Share this article on Facebook."></a></li>
+								<li><div class="fb-share-button" data-href="http://www.rgvmillennials.org/2016millennial" data-layout="button"></div></li>
 							</ul>
 						</article>
 					</div>
@@ -68,8 +68,7 @@
 							</header>
 							<div class="links">
 								<a class="button" href="#">Send Us A Message</a>
-								<a class="button" href="#">Submit An Event</a>
-								<a class="button" href="#">Follow On Facebook</a>
+								<a class="button" href="https://www.facebook.com/rgvmillennials" target="_blank">Facebook</a>
 							</div>
 						</aside>
 					</div>

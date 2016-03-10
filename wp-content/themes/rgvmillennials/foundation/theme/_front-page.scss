@@ -96,23 +96,24 @@
 			article {
 				@include content;
 				.article-image {
+					background:url('images/2016-award-frontpage-teaser.jpg');
+	
+					@include background-image-cover;
+
 					min-height:rem-calc(430);
 					padding:$half-gutter;
 					@include breakpoint(xlarge) {
 						padding:$gutter;
 					}
 
-					background:$black;
 					color:$white;
 
 					h3 {
 						@include breakpoint(xxxlarge) {
-							margin-bottom:0rem;
+							margin-bottom:$small-rem;
 						}
 					}
-					.date {
-						font-weight:700;
-					}
+
 					.excerpt {
 						margin-right:auto;
 						margin-left:auto;

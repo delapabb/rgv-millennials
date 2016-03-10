@@ -29,7 +29,6 @@
 /* Reusable Elements */
 
 .menu.share-links {
-	margin-right:rem-calc(-4);
 	margin-top:$small-rem;
 	@include advent-pro-700;
 	& li {
@@ -40,6 +39,10 @@
 			img {
 				margin-top:rem-calc(-2);
 			}
+		}
+		.fb_iframe_widget {
+			display:block;
+			margin-top:-(rem-calc(10));
 		}
 	}
 }
