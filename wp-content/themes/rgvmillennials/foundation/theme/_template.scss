@@ -21,6 +21,8 @@
 #sb-site {
 	margin-top:$xxlarge-rem;
 
+	background:$light-gray;
+
 	.sb-active-left & {
 		margin-left:-1px;
 	}
@@ -96,7 +98,15 @@ nav.drawer-menu {
 	}
 }
 
+.page-wrap {
+	margin-bottom:rem-calc(102);
+}
+
 .site-footer {
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
 	background:$black;
 	padding:$gutter $half-gutter $gutter $half-gutter;
 	text-align:center;

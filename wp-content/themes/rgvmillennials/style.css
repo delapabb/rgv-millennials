@@ -1979,14 +1979,14 @@ code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-weight: 300;
   color: #333333;
-  background-color: #f2f8ff;
+  background-color: #f9fbfd;
   border: 1px solid #cacaca;
   padding: 0.125rem 0.3125rem 0.0625rem; }
 
 kbd {
   padding: 0.125rem 0.25rem 0;
   margin: 0;
-  background-color: #f2f8ff;
+  background-color: #f9fbfd;
   color: #333333;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   border-radius: 0.25rem; }
@@ -2280,7 +2280,7 @@ textarea::placeholder {
 input:disabled, input[readonly],
 textarea:disabled,
 textarea[readonly] {
-  background-color: #f2f8ff;
+  background-color: #f9fbfd;
   cursor: default; }
 
 [type='submit'],
@@ -2346,7 +2346,7 @@ label {
 .input-group-label {
   text-align: center;
   padding: 0 1rem;
-  background: #f2f8ff;
+  background: #f9fbfd;
   color: #333333;
   border: 1px solid #cacaca;
   white-space: nowrap;
@@ -2416,7 +2416,7 @@ select {
     select {
       background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIpJREFUeNrEkckNgDAMBBfRkEt0ObRBBdsGXUDgmQfK4XhH2m8czQAAy27R3tsw4Qfe2x8uOO6oYLb6GlOor3GF+swURAOmUJ+RwtEJs9WvTGEYxBXqI1MQAZhCfUQKRzDMVj+TwrAIV6jvSUEkYAr1LSkcyTBb/V+KYfX7xAeusq3sLDtGH3kEGACPWIflNZfhRQAAAABJRU5ErkJggg=="); } }
   select:disabled {
-    background-color: #f2f8ff;
+    background-color: #f9fbfd;
     cursor: default; }
   select::-ms-expand {
     display: none; }
@@ -2600,7 +2600,7 @@ select {
 .accordion {
   list-style-type: none;
   background: #ffffff;
-  border: 1px solid #f2f8ff;
+  border: 1px solid #f9fbfd;
   border-bottom: 0;
   border-radius: 0.25rem;
   margin-left: 0; }
@@ -2612,9 +2612,9 @@ select {
   font-size: 0.75rem;
   color: #ff3456;
   position: relative;
-  border-bottom: 1px solid #f2f8ff; }
+  border-bottom: 1px solid #f9fbfd; }
   .accordion-title:hover, .accordion-title:focus {
-    background-color: #f2f8ff; }
+    background-color: #f9fbfd; }
   .accordion-title::before {
     content: '+';
     position: absolute;
@@ -2627,7 +2627,7 @@ select {
 .accordion-content {
   padding: 1rem;
   display: none;
-  border-bottom: 1px solid #f2f8ff;
+  border-bottom: 1px solid #f9fbfd;
   background-color: #ffffff; }
 
 .is-accordion-submenu-parent > a {
@@ -3573,7 +3573,7 @@ body {
 
 .off-canvas {
   position: absolute;
-  background: #f2f8ff;
+  background: #f9fbfd;
   z-index: -1;
   max-height: 100%;
   overflow-y: auto;
@@ -3773,7 +3773,7 @@ body {
     border-radius: 0.25rem; }
     .pagination a:hover,
     .pagination button:hover {
-      background: #f2f8ff; }
+      background: #f9fbfd; }
   .pagination .current {
     padding: 0.1875rem 0.625rem;
     background: #ff3456;
@@ -3846,7 +3846,7 @@ body {
   height: 0.5rem;
   margin-top: 1.25rem;
   margin-bottom: 2.25rem;
-  background-color: #f2f8ff;
+  background-color: #f9fbfd;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -4192,7 +4192,7 @@ table.hover tr:nth-of-type(even):hover {
   margin: 0;
   list-style-type: none;
   background: #ffffff;
-  border: 1px solid #f2f8ff; }
+  border: 1px solid #f9fbfd; }
   .tabs::before, .tabs::after {
     content: ' ';
     display: table;
@@ -4232,16 +4232,16 @@ table.hover tr:nth-of-type(even):hover {
     .tabs-title > a:hover {
       background: #ffffff; }
     .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
-      background: #f2f8ff; }
+      background: #f9fbfd; }
 
 .tabs-content {
   background: #ffffff;
   transition: all 0.5s ease;
-  border: 1px solid #f2f8ff;
+  border: 1px solid #f9fbfd;
   border-top: 0; }
 
 .tabs-content.vertical {
-  border: 1px solid #f2f8ff;
+  border: 1px solid #f9fbfd;
   border-left: 0; }
 
 .tabs-panel {
@@ -4404,7 +4404,7 @@ table.hover tr:nth-of-type(even):hover {
     clear: both; }
   .top-bar,
   .top-bar ul {
-    background-color: #f2f8ff; }
+    background-color: #f9fbfd; }
   .top-bar input {
     width: 200px;
     margin-right: 1rem; }
@@ -5295,6 +5295,11 @@ input[type=submit] {
   text-transform: uppercase;
   margin-top: 1.125rem; }
 
+.ninja-forms-field-error,
+.ninja-forms-error-msg {
+  color: #ff3456;
+  margin: -0.5rem 0rem 1.125rem 0rem; }
+
 /* Top Sticky */
 /* Inline Background Hero Images Are Set To Cover */
 /* Responsively Line-Breaking Spans */
@@ -5413,7 +5418,8 @@ p.linebreak-spans-on-xxxlarge-down span {
   background: #ffffff; }
 
 #sb-site {
-  margin-top: 3.375rem; }
+  margin-top: 3.375rem;
+  background: #f9fbfd; }
   .sb-active-left #sb-site {
     margin-left: -1px; }
 
@@ -5469,18 +5475,26 @@ nav.drawer-menu ul.menu li a {
     color: #ffffff;
     background: #007eff; }
 
+.page-wrap {
+  margin-bottom: 6.375rem; }
+
 .site-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: #333333;
   padding: 2.25rem 1.125rem 2.25rem 1.125rem;
   text-align: center; }
 
-.page .page-wrap {
+.page .page-wrap h1 {
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  line-height: 1;
+  margin: 2.25rem 0rem 0.5625rem 0rem; }
+
+.page .page-wrap .content {
   padding-bottom: 2.25rem; }
-  .page .page-wrap h1 {
-    text-transform: uppercase;
-    font-size: 2.25rem;
-    line-height: 1;
-    margin: 2.25rem 0rem 0.5625rem 0rem; }
   .page .page-wrap .content h1, .page .page-wrap .content h2, .page .page-wrap .content h3, .page .page-wrap .content h4, .page .page-wrap .content h5, .page .page-wrap .content h6 {
     font-size: 2.25rem;
     line-height: 1.3333;
@@ -5555,7 +5569,6 @@ nav.drawer-menu ul.menu li a {
       border: 2px solid #ffffff; }
 
 .home .post.teaser {
-  background: #f2f8ff;
   padding-bottom: 1.125rem;
   text-align: center; }
   @media screen and (min-width: 37.5em) {
@@ -5685,10 +5698,6 @@ nav.drawer-menu ul.menu li a {
     @media screen and (min-width: 37.5em) {
       .page-template-award-application .page-content {
         padding: 2.25rem 1.125rem; } }
-    .page-template-award-application .page-content .ninja-forms-field-error,
-    .page-template-award-application .page-content .ninja-forms-error-msg {
-      color: #ff3456;
-      margin: -0.5rem 0rem 1.125rem 0rem; }
     @media screen and (min-width: 37.5em) {
       .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_7_div_wrap {
         float: left;
@@ -5716,8 +5725,6 @@ nav.drawer-menu ul.menu li a {
       margin-top: 0.5625rem;
       text-align: right;
       color: #ff3456; }
-    .page-template-award-application .page-content .powered-by {
-      background: #333333; }
 
 .single-events h2 {
   text-transform: uppercase;

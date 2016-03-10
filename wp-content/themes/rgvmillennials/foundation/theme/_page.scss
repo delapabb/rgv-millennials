@@ -1,11 +1,11 @@
 .page {
 	.page-wrap {
-		padding-bottom:$large-rem;
 		h1 {
 			@include section-title;
 		}
 		.content {
 			@include content;
+			padding-bottom:$gutter;
 		}
 	}
 }

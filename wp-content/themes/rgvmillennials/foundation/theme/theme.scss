@@ -68,6 +68,12 @@ input[type=submit] {
 	  margin-top: $normal-rem;
 }
 
+.ninja-forms-field-error,
+.ninja-forms-error-msg {
+	color:$primary-color;
+	margin:-0.5rem 0rem $normal-rem 0rem;
+}
+
 // Return veritcal rhythm for content typography
 @mixin content { 
 	h1, h2, h3, h4, h5, h6 {

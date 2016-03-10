@@ -21,11 +21,6 @@
 		@include breakpoint(xlarge) {
 			padding:$gutter $half-gutter;
 		}
-		.ninja-forms-field-error,
-		.ninja-forms-error-msg {
-			color:$primary-color;
-			margin:-0.5rem 0rem $normal-rem 0rem;
-		}
 		#ninja_forms_form_5 {
 			@include breakpoint (xlarge) {
 				#ninja_forms_field_7_div_wrap {
@@ -62,9 +57,6 @@
 				text-align: right;
   				color: $primary-color;
 			}
-		}
-		.powered-by {
-			background:$black;
 		}
 	}
 }

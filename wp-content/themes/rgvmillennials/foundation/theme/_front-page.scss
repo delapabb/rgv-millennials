@@ -71,7 +71,6 @@
 	}
 
 	.post.teaser {
-		background:$light-gray;
 		padding-bottom:$half-gutter;
 		@include breakpoint(xlarge) {
 			padding-bottom:$gutter;
