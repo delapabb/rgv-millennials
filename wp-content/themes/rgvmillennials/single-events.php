@@ -50,6 +50,11 @@
 							<p><?php the_field('event_city') ?></p>
 						<?php } ?>
 
+						<ul class="menu share-links text-center">
+							<li>Share This Event</li>
+							<li><div class="fb-share-button" data-href="<?php the_permalink(); ?>" data-layout="button"></div></li>
+						</ul>
+
 						<?php if ( get_field('event_intro_text') ) { ?>
 							<div class="intro-text">
 								<p><?php the_field('event_intro_text') ?></p>
