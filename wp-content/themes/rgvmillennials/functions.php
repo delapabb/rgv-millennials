@@ -86,3 +86,8 @@ function rgvmillennials_extra_body_classes($classes) {
 * Remove Ninja Forms css_includes*
 */
 remove_action( 'ninja_forms_display_css', 'ninja_forms_display_css');
+
+/**
+* Remove Ninja Forms "Append Ninja Form" metabox in post edit screens*
+*/
+remove_action('add_meta_boxes','ninja_forms_add_custom_box' );
