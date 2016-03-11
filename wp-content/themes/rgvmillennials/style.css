@@ -5501,7 +5501,7 @@ nav.drawer-menu ul.menu li a {
     font-weight: 400;
     margin: 0rem 0rem 1.125rem 0rem; }
   .page .page-wrap .content p {
-    line-height: 1.3333;
+    line-height: 1.6666;
     margin: 0rem 0rem 1.125rem 0rem; }
   .page .page-wrap .content .button {
     line-height: 1.6666;
@@ -5593,7 +5593,7 @@ nav.drawer-menu ul.menu li a {
     font-weight: 400;
     margin: 0rem 0rem 1.125rem 0rem; }
   .home .post.teaser .get-involved article p {
-    line-height: 1.3333;
+    line-height: 1.6666;
     margin: 0rem 0rem 1.125rem 0rem; }
   .home .post.teaser .get-involved article .button {
     line-height: 1.6666;
@@ -5675,7 +5675,7 @@ nav.drawer-menu ul.menu li a {
       font-weight: 400;
       margin: 0rem 0rem 1.125rem 0rem; }
     .page-template-award-application .page-content p {
-      line-height: 1.3333;
+      line-height: 1.6666;
       margin: 0rem 0rem 1.125rem 0rem; }
     .page-template-award-application .page-content .button {
       line-height: 1.6666;
@@ -5686,7 +5686,7 @@ nav.drawer-menu ul.menu li a {
       font-weight: 400;
       margin: 0rem 0rem 1.125rem 0rem; }
     .page-template-award-application .page-content .application-sidebar p {
-      line-height: 1.3333;
+      line-height: 1.6666;
       margin: 0rem 0rem 1.125rem 0rem; }
     .page-template-award-application .page-content .application-sidebar .button {
       line-height: 1.6666;
@@ -5782,7 +5782,7 @@ nav.drawer-menu ul.menu li a {
       font-weight: 400;
       margin: 0rem 0rem 1.125rem 0rem; }
     .single-events .main-content .content p {
-      line-height: 1.3333;
+      line-height: 1.6666;
       margin: 0rem 0rem 1.125rem 0rem; }
     .single-events .main-content .content .button {
       line-height: 1.6666;
@@ -5806,7 +5806,7 @@ nav.drawer-menu ul.menu li a {
       font-weight: 400;
       margin: 0rem 0rem 1.125rem 0rem; }
     .single-events .speakers .speaker-list p {
-      line-height: 1.3333;
+      line-height: 1.6666;
       margin: 0rem 0rem 1.125rem 0rem; }
     .single-events .speakers .speaker-list .button {
       line-height: 1.6666;
@@ -5817,7 +5817,8 @@ nav.drawer-menu ul.menu li a {
     .single-events .speakers .speaker-list .speaker {
       min-height: 18.5625rem; }
       .single-events .speakers .speaker-list .speaker p.title {
-        margin-top: 0.5625rem; }
+        margin-top: 0.5625rem;
+        margin-bottom: 0rem; }
       .single-events .speakers .speaker-list .speaker .headshot {
         max-height: 9rem;
         border-radius: 50%; }
@@ -5838,7 +5839,7 @@ nav.drawer-menu ul.menu li a {
       font-weight: 400;
       margin: 0rem 0rem 1.125rem 0rem; }
     .single-events .agenda .schedule p {
-      line-height: 1.3333;
+      line-height: 1.6666;
       margin: 0rem 0rem 1.125rem 0rem; }
     .single-events .agenda .schedule .button {
       line-height: 1.6666;

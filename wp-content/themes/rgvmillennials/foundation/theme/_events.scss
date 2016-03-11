@@ -82,8 +82,11 @@
 
 			.speaker {
 				min-height:rem-calc(297);
-				p.title {
-					margin-top:$small-rem;
+				p {
+					&.title {
+						margin-top:$small-rem;
+						margin-bottom:0rem;
+					}
 				}
 				.headshot {
 					max-height:rem-calc(144);
