@@ -1835,7 +1835,7 @@ td {
 
 p {
   font-size: inherit;
-  line-height: 1.6666;
+  line-height: 1.5;
   margin-bottom: 0rem;
   text-rendering: optimizeLegibility; }
 
@@ -1866,7 +1866,7 @@ h6 {
   text-rendering: optimizeLegibility;
   margin-top: 0;
   margin-bottom: 0rem;
-  line-height: 1.33333; }
+  line-height: 1.3; }
   h1 small,
   h2 small,
   h3 small,
@@ -1931,7 +1931,7 @@ hr {
 ul,
 ol,
 dl {
-  line-height: 1.6666;
+  line-height: 1.5;
   margin-bottom: 0rem;
   list-style-position: outside; }
 
@@ -1960,13 +1960,13 @@ blockquote {
   padding: 0.5625rem 1.25rem 0 1.1875rem;
   border-left: 1px solid #cacaca; }
   blockquote, blockquote p {
-    line-height: 1.6666;
-    color: #444444; }
+    line-height: 1.5;
+    color: #666666; }
 
 cite {
   display: block;
   font-size: 0.8125rem;
-  color: #444444; }
+  color: #666666; }
   cite:before {
     content: '\2014 \0020'; }
 
@@ -1996,7 +1996,7 @@ kbd {
   margin-bottom: 0.5rem;
   font-weight: 300;
   line-height: 1.4;
-  color: #444444; }
+  color: #666666; }
 
 .lead {
   font-size: 125%;
@@ -2112,7 +2112,7 @@ kbd {
     content: " (" attr(title) ")"; }
   pre,
   blockquote {
-    border: 1px solid #444444;
+    border: 1px solid #666666;
     page-break-inside: avoid; }
   thead {
     display: table-header-group; }
@@ -2250,7 +2250,7 @@ textarea {
   -moz-appearance: none; }
   [type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus,
   textarea:focus {
-    border: 1px solid #444444;
+    border: 1px solid #666666;
     background-color: #ffffff;
     outline: none;
     box-shadow: 0 0 5px #cacaca;
@@ -2407,7 +2407,7 @@ select {
   border-radius: 0.25rem;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="24" viewBox="0 0 32 24"><polygon points="0,0 32,0 16,24" style="fill: rgb%2868, 68, 68%29"></polygon></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="24" viewBox="0 0 32 24"><polygon points="0,0 32,0 16,24" style="fill: rgb%28102, 102, 102%29"></polygon></svg>');
   background-size: 9px 6px;
   background-position: right center;
   background-origin: content-box;
@@ -2856,7 +2856,7 @@ select {
 
 .close-button {
   position: absolute;
-  color: #444444;
+  color: #666666;
   right: 1rem;
   top: 0.5rem;
   font-size: 2em;
@@ -3737,9 +3737,9 @@ body {
     background-color: #cacaca;
     border-radius: 50%; }
     .orbit-bullets button:hover {
-      background-color: #444444; }
+      background-color: #666666; }
     .orbit-bullets button.is-active {
-      background-color: #444444; }
+      background-color: #666666; }
 
 .pagination {
   margin-left: 0;
@@ -4311,11 +4311,11 @@ table.hover tr:nth-of-type(even):hover {
     left: 0;
     box-shadow: 0 7px 0 #333333, 0 14px 0 #333333; }
   .menu-icon.dark:hover::after {
-    background: #444444;
-    box-shadow: 0 7px 0 #444444, 0 14px 0 #444444; }
+    background: #666666;
+    box-shadow: 0 7px 0 #666666, 0 14px 0 #666666; }
 
 .has-tip {
-  border-bottom: dotted 1px #444444;
+  border-bottom: dotted 1px #666666;
   font-weight: bold;
   position: relative;
   display: inline-block;
@@ -5267,7 +5267,8 @@ html.sb-static .sb-slidebar,
 
 /* Typography */
 body {
-  font-size: 1.125rem; }
+  font-size: 1.25rem;
+  word-spacing: 0.1rem; }
 
 ul.unstyled-list {
   list-style-type: none;
@@ -5288,17 +5289,17 @@ input[type=file] {
 input[type=submit] {
   border: 0px;
   background: #ff3456;
-  padding: 0.5625rem 1.125rem;
+  padding: 0.625rem 1.25rem;
   color: #ffffff;
   font-family: 'Advent Pro', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 1.125rem; }
+  margin-top: 1.25rem; }
 
 .ninja-forms-field-error,
 .ninja-forms-error-msg {
   color: #ff3456;
-  margin: -0.5rem 0rem 1.125rem 0rem; }
+  margin: -0.5rem 0rem 1.25rem 0rem; }
 
 /* Top Sticky */
 /* Inline Background Hero Images Are Set To Cover */
@@ -5377,7 +5378,7 @@ p.linebreak-spans-on-xxxlarge-down span {
 .button {
   font-family: 'Advent Pro', sans-serif;
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   border: 2px solid #ff3456;
   color: #ff3456; }
@@ -5388,7 +5389,7 @@ p.linebreak-spans-on-xxxlarge-down span {
 
 /* Reusable Elements */
 .menu.share-links {
-  margin-top: 0.5625rem;
+  margin-top: 0.625rem;
   font-family: 'Advent Pro', sans-serif;
   font-weight: 700; }
   .menu.share-links li {
@@ -5407,25 +5408,25 @@ p.linebreak-spans-on-xxxlarge-down span {
   .logged-out #sb-site, .error404 #sb-site {
     background: #333333; }
   .logged-out .landing, .error404 .landing {
-    padding: 2.25rem;
+    padding: 2.5rem;
     text-align: center;
     color: #ffffff; }
     .logged-out .landing .rgvm-logo, .error404 .landing .rgvm-logo {
       height: 360px;
-      margin-bottom: 1.125rem; }
+      margin-bottom: 1.25rem; }
 
 .page-template-award-application {
   background: #ffffff; }
 
 #sb-site {
-  margin-top: 3.375rem;
+  margin-top: 3.75rem;
   background: #f9fbfd; }
   .sb-active-left #sb-site {
     margin-left: -1px; }
 
 .main-menu {
   box-sizing: border-box;
-  height: 3.375rem;
+  height: 3.75rem;
   border-bottom: 2px solid #eeeeee;
   background: #ffffff;
   top: 0;
@@ -5438,8 +5439,8 @@ p.linebreak-spans-on-xxxlarge-down span {
     .main-menu nav ul.menu > li {
       display: inline-block; }
       .main-menu nav ul.menu > li > a {
-        padding: 1.125rem;
-        font-size: 1.125rem;
+        padding: 1.25rem;
+        font-size: 1.25rem;
         color: #333333;
         font-family: 'Advent Pro', sans-serif;
         font-weight: 700;
@@ -5449,7 +5450,7 @@ p.linebreak-spans-on-xxxlarge-down span {
 
 .mobile-nav-bar {
   box-sizing: border-box;
-  height: 3.375rem;
+  height: 3.75rem;
   border-bottom: 2px solid #eeeeee;
   background: #ffffff;
   top: 0;
@@ -5457,7 +5458,7 @@ p.linebreak-spans-on-xxxlarge-down span {
   right: 0;
   position: fixed;
   z-index: 99999;
-  padding: 0.5625rem; }
+  padding: 0.625rem; }
   .sb-active-left .mobile-nav-bar {
     margin-left: -1px; }
   .mobile-nav-bar #mobile-nav-icon {
@@ -5466,7 +5467,7 @@ p.linebreak-spans-on-xxxlarge-down span {
       fill: #ff3456; }
 
 nav.drawer-menu ul.menu li a {
-  padding: 1.6875rem;
+  padding: 1.875rem;
   color: #ffffff;
   font-family: 'Advent Pro', sans-serif;
   font-weight: 700;
@@ -5489,32 +5490,30 @@ nav.drawer-menu ul.menu li a {
 
 .page .page-wrap h1 {
   text-transform: uppercase;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   line-height: 1;
-  margin: 2.25rem 0rem 0.5625rem 0rem; }
+  margin: 2.5rem 0rem 0.625rem 0rem; }
 
 .page .page-wrap .content {
   padding-bottom: 2.25rem; }
   .page .page-wrap .content h1, .page .page-wrap .content h2, .page .page-wrap .content h3, .page .page-wrap .content h4, .page .page-wrap .content h5, .page .page-wrap .content h6 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     line-height: 1.3333;
     font-weight: 400;
-    margin: 0rem 0rem 1.125rem 0rem; }
+    margin: 0rem 0rem 1.25rem 0rem; }
   .page .page-wrap .content p {
-    line-height: 1.6666;
-    margin: 0rem 0rem 1.125rem 0rem; }
+    margin: 0rem 0rem 1.25rem 0rem; }
   .page .page-wrap .content .button {
-    line-height: 1.6666;
-    margin: 0rem 0rem 1.125rem 0rem; }
+    margin: 0rem 0rem 1.25rem 0rem; }
 
 .home .hero {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center !important;
-  padding: 2.25rem 0rem;
+  padding: 2.5rem 0rem;
   text-align: center; }
   .home .hero .rgvm-logo {
-    margin-bottom: 2.25rem;
+    margin-bottom: 2.5rem;
     height: 180px; }
     @media screen and (min-width: 30em) {
       .home .hero .rgvm-logo {
@@ -5526,29 +5525,29 @@ nav.drawer-menu ul.menu li a {
     max-width: 37.125rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 0rem 1.125rem 0rem 1.125rem;
+    padding: 0rem 1.25rem 0rem 1.25rem;
     color: #ffffff; }
 
 .home .millennial-banner {
-  padding: 2.25rem 0rem 2.25rem 0rem;
+  padding: 2.5rem 0rem 2.5rem 0rem;
   background: url("images/millennial-rays-01.png") #ff3456 fixed;
   font-family: 'Advent Pro', sans-serif;
   font-weight: 700;
-  font-size: 1.6875rem;
+  font-size: 1.875rem;
   text-align: center;
   color: #ffffff; }
   @media screen and (min-width: 37.5em) {
     .home .millennial-banner p {
-      font-size: 2.25rem; } }
+      font-size: 2.5rem; } }
   @media screen and (min-width: 48em) {
     .home .millennial-banner p {
-      font-size: 2.8125rem; } }
+      font-size: 3.125rem; } }
   @media screen and (min-width: 62.5em) {
     .home .millennial-banner p {
-      font-size: 3.375rem; } }
+      font-size: 3.75rem; } }
 
 .home .event-teaser {
-  padding: 2.25rem 0rem 2.25rem 0rem;
+  padding: 2.5rem 0rem 2.5rem 0rem;
   background: #007eff;
   color: #ffffff;
   text-align: center; }
@@ -5559,7 +5558,7 @@ nav.drawer-menu ul.menu li a {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300; }
   .home .event-teaser .event-details {
-    margin: 0rem 0rem 1.125rem 0rem; }
+    margin: 0rem 0rem 1.25rem 0rem; }
   .home .event-teaser .button {
     border: 2px solid #ffffff;
     color: #ffffff; }
@@ -5584,20 +5583,18 @@ nav.drawer-menu ul.menu li a {
         text-align: right; } }
   .home .post.teaser h2 {
     text-transform: uppercase;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     line-height: 1;
-    margin: 2.25rem 0rem 0.5625rem 0rem; }
+    margin: 2.5rem 0rem 0.625rem 0rem; }
   .home .post.teaser .get-involved article h1, .home .post.teaser .get-involved article h2, .home .post.teaser .get-involved article h3, .home .post.teaser .get-involved article h4, .home .post.teaser .get-involved article h5, .home .post.teaser .get-involved article h6 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     line-height: 1.3333;
     font-weight: 400;
-    margin: 0rem 0rem 1.125rem 0rem; }
+    margin: 0rem 0rem 1.25rem 0rem; }
   .home .post.teaser .get-involved article p {
-    line-height: 1.6666;
-    margin: 0rem 0rem 1.125rem 0rem; }
+    margin: 0rem 0rem 1.25rem 0rem; }
   .home .post.teaser .get-involved article .button {
-    line-height: 1.6666;
-    margin: 0rem 0rem 1.125rem 0rem; }
+    margin: 0rem 0rem 1.25rem 0rem; }
   .home .post.teaser .get-involved article .article-image {
     background: url("images/2016-award-frontpage-teaser.jpg");
     background-repeat: no-repeat !important;
@@ -5611,7 +5608,7 @@ nav.drawer-menu ul.menu li a {
         padding: 2.25rem; } }
     @media screen and (min-width: 62.5em) {
       .home .post.teaser .get-involved article .article-image h3 {
-        margin-bottom: 0.5625rem; } }
+        margin-bottom: 0.625rem; } }
     .home .post.teaser .get-involved article .article-image .excerpt {
       margin-right: auto;
       margin-left: auto;
@@ -5632,7 +5629,7 @@ nav.drawer-menu ul.menu li a {
     background: url("images/millennial-rays-02.png") #ff3456;
     border: 1px solid transparent; }
     .home .post.teaser .reach-out aside .links .button {
-      margin-bottom: 1.125rem;
+      margin-bottom: 1.25rem;
       border: 2px solid #ffffff;
       color: #ffffff;
       color: #333333;
@@ -5661,7 +5658,7 @@ nav.drawer-menu ul.menu li a {
           margin-right: 0; } }
 
 .page-template-award-application .page-header {
-  padding: 2.25rem;
+  padding: 2.5rem;
   background: #57B3C2; }
   .page-template-award-application .page-header .rgvm-logo {
     height: 252px; }
@@ -5670,29 +5667,27 @@ nav.drawer-menu ul.menu li a {
   padding: 0rem 0rem 2.25rem 0rem; }
   .page-template-award-application .page-content h1 {
     text-transform: uppercase;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     line-height: 1;
-    margin: 2.25rem 0rem 0.5625rem 0rem; }
+    margin: 2.5rem 0rem 0.625rem 0rem; }
   .page-template-award-application .page-content .entry-content h1, .page-template-award-application .page-content .entry-content h2, .page-template-award-application .page-content .entry-content h3, .page-template-award-application .page-content .entry-content h4, .page-template-award-application .page-content .entry-content h5, .page-template-award-application .page-content .entry-content h6 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     line-height: 1.3333;
     font-weight: 400;
-    margin: 0rem 0rem 1.125rem 0rem; }
+    margin: 0rem 0rem 1.25rem 0rem; }
   .page-template-award-application .page-content .entry-content p {
-    line-height: 1.6666;
-    margin: 0rem 0rem 1.125rem 0rem; }
+    margin: 0rem 0rem 1.25rem 0rem; }
   .page-template-award-application .page-content .entry-content .button {
-    line-height: 1.6666;
-    margin: 0rem 0rem 1.125rem 0rem; }
+    margin: 0rem 0rem 1.25rem 0rem; }
   .page-template-award-application .page-content .application-sidebar h2 {
     text-transform: uppercase;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     line-height: 1;
-    margin: 2.25rem 0rem 0.5625rem 0rem; }
+    margin: 2.5rem 0rem 0.625rem 0rem; }
   .page-template-award-application .page-content .application-sidebar img {
     margin-top: 0.3125rem; }
   .page-template-award-application .page-content .application-sidebar .button {
-    margin-top: 1.125rem;
+    margin-top: 1.25rem;
     color: #ffffff;
     background: #ff3456; }
   @media screen and (min-width: 37.5em) {
@@ -5702,7 +5697,7 @@ nav.drawer-menu ul.menu li a {
     .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_7_div_wrap {
       float: left;
       width: 50%;
-      padding-right: 1.125rem; }
+      padding-right: 1.25rem; }
     .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_8_div_wrap {
       float: left;
       width: 50%; }
@@ -5722,19 +5717,19 @@ nav.drawer-menu ul.menu li a {
     min-height: 18rem;
     margin-bottom: 0px; }
   .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_30_counter {
-    margin-top: 0.5625rem;
+    margin-top: 0.625rem;
     text-align: right;
     color: #ff3456; }
 
 .single-events h2 {
   text-transform: uppercase;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   line-height: 1;
-  margin: 2.25rem 0rem 0.5625rem 0rem;
-  margin: 2.8125rem 0rem; }
+  margin: 2.5rem 0rem 0.625rem 0rem;
+  margin: 3.125rem 0rem; }
 
 .single-events .hero-banner {
-  padding: 2.25rem 0rem;
+  padding: 2.5rem 0rem;
   background: url("images/millennial-rays-03.png") fixed;
   text-align: center;
   color: #ffffff; }
@@ -5748,17 +5743,17 @@ nav.drawer-menu ul.menu li a {
     font-family: 'Advent Pro', sans-serif;
     font-weight: 400;
     color: #ffd400;
-    font-size: 2.8125rem; }
+    font-size: 3.125rem; }
     @media screen and (min-width: 48em) {
       .single-events .hero-banner h1 {
-        font-size: 3.375rem; } }
+        font-size: 3.75rem; } }
   .single-events .hero-banner .intro-text {
-    margin-top: 1.125rem;
+    margin-top: 1.25rem;
     max-width: 37.125rem;
     margin-left: auto;
     margin-right: auto; }
   .single-events .hero-banner .button {
-    margin-top: 1.125rem;
+    margin-top: 1.25rem;
     border: 2px solid #ffffff;
     color: #ffffff; }
     .single-events .hero-banner .button:hover {
@@ -5777,16 +5772,14 @@ nav.drawer-menu ul.menu li a {
     margin-left: auto;
     margin-right: auto; }
     .single-events .main-content .content h1, .single-events .main-content .content h2, .single-events .main-content .content h3, .single-events .main-content .content h4, .single-events .main-content .content h5, .single-events .main-content .content h6 {
-      font-size: 2.25rem;
+      font-size: 2.5rem;
       line-height: 1.3333;
       font-weight: 400;
-      margin: 0rem 0rem 1.125rem 0rem; }
+      margin: 0rem 0rem 1.25rem 0rem; }
     .single-events .main-content .content p {
-      line-height: 1.6666;
-      margin: 0rem 0rem 1.125rem 0rem; }
+      margin: 0rem 0rem 1.25rem 0rem; }
     .single-events .main-content .content .button {
-      line-height: 1.6666;
-      margin: 0rem 0rem 1.125rem 0rem; }
+      margin: 0rem 0rem 1.25rem 0rem; }
 
 .single-events .speakers {
   text-align: center; }
@@ -5801,30 +5794,31 @@ nav.drawer-menu ul.menu li a {
       .single-events .speakers .speaker-list {
         max-width: 48rem; } }
     .single-events .speakers .speaker-list h1, .single-events .speakers .speaker-list h2, .single-events .speakers .speaker-list h3, .single-events .speakers .speaker-list h4, .single-events .speakers .speaker-list h5, .single-events .speakers .speaker-list h6 {
-      font-size: 2.25rem;
+      font-size: 2.5rem;
       line-height: 1.3333;
       font-weight: 400;
-      margin: 0rem 0rem 1.125rem 0rem; }
+      margin: 0rem 0rem 1.25rem 0rem; }
     .single-events .speakers .speaker-list p {
-      line-height: 1.6666;
-      margin: 0rem 0rem 1.125rem 0rem; }
+      margin: 0rem 0rem 1.25rem 0rem; }
     .single-events .speakers .speaker-list .button {
-      line-height: 1.6666;
-      margin: 0rem 0rem 1.125rem 0rem; }
-    .single-events .speakers .speaker-list .column:last-child, .single-events .speakers .speaker-list .columns:last-child {
-      float: none;
-      margin: auto; }
+      margin: 0rem 0rem 1.25rem 0rem; }
     .single-events .speakers .speaker-list .speaker {
-      min-height: 18.5625rem; }
+      min-height: 21.25rem; }
       .single-events .speakers .speaker-list .speaker p.title {
-        margin-top: 0.5625rem;
+        margin-top: 0.625rem;
         margin-bottom: 0rem; }
       .single-events .speakers .speaker-list .speaker .headshot {
         max-height: 9rem;
         border-radius: 50%; }
+    .single-events .speakers .speaker-list .column:last-child, .single-events .speakers .speaker-list .columns:last-child {
+      float: none;
+      margin: auto; }
+      .single-events .speakers .speaker-list .column:last-child .speaker, .single-events .speakers .speaker-list .columns:last-child .speaker {
+        min-height: 20rem; }
 
 .single-events .agenda {
   padding: 0rem 0rem 1.125rem 0rem;
+  background: #ffffff;
   text-align: center; }
   @media screen and (min-width: 37.5em) {
     .single-events .agenda {
@@ -5834,24 +5828,23 @@ nav.drawer-menu ul.menu li a {
     margin-left: auto;
     margin-right: auto; }
     .single-events .agenda .schedule h1, .single-events .agenda .schedule h2, .single-events .agenda .schedule h3, .single-events .agenda .schedule h4, .single-events .agenda .schedule h5, .single-events .agenda .schedule h6 {
-      font-size: 2.25rem;
+      font-size: 2.5rem;
       line-height: 1.3333;
       font-weight: 400;
-      margin: 0rem 0rem 1.125rem 0rem; }
+      margin: 0rem 0rem 1.25rem 0rem; }
     .single-events .agenda .schedule p {
-      line-height: 1.6666;
-      margin: 0rem 0rem 1.125rem 0rem; }
+      margin: 0rem 0rem 1.25rem 0rem; }
     .single-events .agenda .schedule .button {
-      line-height: 1.6666;
-      margin: 0rem 0rem 1.125rem 0rem; }
+      margin: 0rem 0rem 1.25rem 0rem; }
     .single-events .agenda .schedule .entry h3 {
       color: #007eff; }
     .single-events .agenda .schedule .entry ul.participant-list {
       list-style-type: none;
       margin-left: 0rem;
-      margin-bottom: 1.125rem; }
+      margin-bottom: 1.25rem; }
       .single-events .agenda .schedule .entry ul.participant-list li.name {
-        margin-bottom: -0.375rem; }
+        margin-bottom: -0.25rem; }
       .single-events .agenda .schedule .entry ul.participant-list li.detail {
         font-style: italic;
-        font-size: 0.875rem; }
+        font-size: 1.125rem;
+        color: #666666; }

@@ -75,13 +75,8 @@
 
 			@include content;
 
-			.column:last-child {
-				float:none;
-				margin:auto;
-			}
-
 			.speaker {
-				min-height:rem-calc(297);
+				min-height:rem-calc($base-rem * 17);
 				p {
 					&.title {
 						margin-top:$small-rem;
@@ -93,11 +88,21 @@
 					border-radius:50%;
 				}
 			}
+
+			.column:last-child {
+				float:none;
+				margin:auto;
+				.speaker {
+					min-height:rem-calc($base-rem * 16);
+				}
+			}
 		}
 	}
 
 	.agenda {
 		padding:0rem 0rem $half-gutter 0rem;
+		background:$white;
+
 		text-align:center;
 
 		@include breakpoint(xlarge) {
@@ -120,11 +125,12 @@
 					margin-left:0rem;
 					margin-bottom:$normal-rem;
 					li.name {
-						margin-bottom:-(rem-calc(6));
+						margin-bottom:-(rem-calc(4));
 					}
 					li.detail {
 						font-style:italic;
 						font-size:$slight-rem;
+						color:$dark-gray;
 					}
 				}
 			}

@@ -1,11 +1,12 @@
-$small-rem:rem-calc(9);
-$slight-rem:rem-calc(14);
-$normal-rem:rem-calc(18);
-$medium-rem:rem-calc(27);
-$large-rem:rem-calc(36);
-$xlarge-rem:rem-calc(45);
-$xxlarge-rem:rem-calc(54);
-$xxxlarge-rem:rem-calc(63);
+$base-rem:20;
+$small-rem:rem-calc($base-rem / 2);
+$slight-rem:rem-calc($base-rem - 2);
+$normal-rem:rem-calc($base-rem);
+$medium-rem:rem-calc($base-rem * 1.5);
+$large-rem:rem-calc($base-rem * 2);
+$xlarge-rem:rem-calc($base-rem * 2.5);
+$xxlarge-rem:rem-calc($base-rem * 3);
+$xxxlarge-rem:rem-calc($base-rem * 3.5);
 
 
 $gutter:rem-calc(map-get($grid-column-gutter, medium));
@@ -16,6 +17,7 @@ $double-gutter:($gutter * 2);
 
 body {
 	font-size:$normal-rem;
+	word-spacing:0.1rem;
 }
 
 @mixin advent-pro-700 {
@@ -83,11 +85,9 @@ input[type=submit] {
 		margin:0rem 0rem $normal-rem 0rem;
 	}
 	p {
-		line-height:1.6666;
 		margin:0rem 0rem $normal-rem 0rem;
 	}
 	.button {
-		line-height:1.6666;
 		margin:0rem 0rem $normal-rem 0rem;
 	}
 }
