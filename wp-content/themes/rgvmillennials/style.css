@@ -5660,71 +5660,70 @@ nav.drawer-menu ul.menu li a {
           margin-left: 0;
           margin-right: 0; } }
 
-.page-template-award-application {
-  overflow-x: visible; }
-  .page-template-award-application .page-header {
-    padding: 2.25rem;
-    background: #57B3C2; }
-    .page-template-award-application .page-header .rgvm-logo {
-      height: 252px; }
-  .page-template-award-application .page-content {
-    padding: 2.25rem 0rem; }
-    .page-template-award-application .page-content h1, .page-template-award-application .page-content h2, .page-template-award-application .page-content h3, .page-template-award-application .page-content h4, .page-template-award-application .page-content h5, .page-template-award-application .page-content h6 {
-      font-size: 2.25rem;
-      line-height: 1.3333;
-      font-weight: 400;
-      margin: 0rem 0rem 1.125rem 0rem; }
-    .page-template-award-application .page-content p {
-      line-height: 1.6666;
-      margin: 0rem 0rem 1.125rem 0rem; }
-    .page-template-award-application .page-content .button {
-      line-height: 1.6666;
-      margin: 0rem 0rem 1.125rem 0rem; }
-    .page-template-award-application .page-content .application-sidebar h1, .page-template-award-application .page-content .application-sidebar h2, .page-template-award-application .page-content .application-sidebar h3, .page-template-award-application .page-content .application-sidebar h4, .page-template-award-application .page-content .application-sidebar h5, .page-template-award-application .page-content .application-sidebar h6 {
-      font-size: 2.25rem;
-      line-height: 1.3333;
-      font-weight: 400;
-      margin: 0rem 0rem 1.125rem 0rem; }
-    .page-template-award-application .page-content .application-sidebar p {
-      line-height: 1.6666;
-      margin: 0rem 0rem 1.125rem 0rem; }
-    .page-template-award-application .page-content .application-sidebar .button {
-      line-height: 1.6666;
-      margin: 0rem 0rem 1.125rem 0rem; }
-    .page-template-award-application .page-content .application-sidebar .button {
-      margin-top: 1.125rem;
-      color: #ffffff;
-      background: #ff3456; }
-    @media screen and (min-width: 37.5em) {
-      .page-template-award-application .page-content {
-        padding: 2.25rem 1.125rem; } }
-    @media screen and (min-width: 37.5em) {
-      .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_7_div_wrap {
-        float: left;
-        width: 50%;
-        padding-right: 1.125rem; }
-      .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_8_div_wrap {
-        float: left;
-        width: 50%; }
-      .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_9_div_wrap {
-        width: 50%;
-        padding-right: 20px; }
-      .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_12_div_wrap,
-      .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_13_div_wrap {
-        float: left;
-        width: 33%;
-        padding-right: 20px; }
-      .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_14_div_wrap {
-        float: left;
-        width: 33%;
-        margin-bottom: 20px; } }
-    .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_30 {
-      min-height: 18rem;
-      margin-bottom: 0px; }
-    .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_30_counter {
-      margin-top: 0.5625rem;
-      text-align: right;
-      color: #ff3456; }
+.page-template-award-application .page-header {
+  padding: 2.25rem;
+  background: #57B3C2; }
+  .page-template-award-application .page-header .rgvm-logo {
+    height: 252px; }
+
+.page-template-award-application .page-content {
+  padding: 2.25rem 0rem; }
+  .page-template-award-application .page-content h1, .page-template-award-application .page-content h2, .page-template-award-application .page-content h3, .page-template-award-application .page-content h4, .page-template-award-application .page-content h5, .page-template-award-application .page-content h6 {
+    font-size: 2.25rem;
+    line-height: 1.3333;
+    font-weight: 400;
+    margin: 0rem 0rem 1.125rem 0rem; }
+  .page-template-award-application .page-content p {
+    line-height: 1.6666;
+    margin: 0rem 0rem 1.125rem 0rem; }
+  .page-template-award-application .page-content .button {
+    line-height: 1.6666;
+    margin: 0rem 0rem 1.125rem 0rem; }
+  .page-template-award-application .page-content .application-sidebar h1, .page-template-award-application .page-content .application-sidebar h2, .page-template-award-application .page-content .application-sidebar h3, .page-template-award-application .page-content .application-sidebar h4, .page-template-award-application .page-content .application-sidebar h5, .page-template-award-application .page-content .application-sidebar h6 {
+    font-size: 2.25rem;
+    line-height: 1.3333;
+    font-weight: 400;
+    margin: 0rem 0rem 1.125rem 0rem; }
+  .page-template-award-application .page-content .application-sidebar p {
+    line-height: 1.6666;
+    margin: 0rem 0rem 1.125rem 0rem; }
+  .page-template-award-application .page-content .application-sidebar .button {
+    line-height: 1.6666;
+    margin: 0rem 0rem 1.125rem 0rem; }
+  .page-template-award-application .page-content .application-sidebar .button {
+    margin-top: 1.125rem;
+    color: #ffffff;
+    background: #ff3456; }
+  @media screen and (min-width: 37.5em) {
+    .page-template-award-application .page-content {
+      padding: 2.25rem 1.125rem; } }
+  @media screen and (min-width: 37.5em) {
+    .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_7_div_wrap {
+      float: left;
+      width: 50%;
+      padding-right: 1.125rem; }
+    .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_8_div_wrap {
+      float: left;
+      width: 50%; }
+    .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_9_div_wrap {
+      width: 50%;
+      padding-right: 20px; }
+    .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_12_div_wrap,
+    .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_13_div_wrap {
+      float: left;
+      width: 33%;
+      padding-right: 20px; }
+    .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_14_div_wrap {
+      float: left;
+      width: 33%;
+      margin-bottom: 20px; } }
+  .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_30 {
+    min-height: 18rem;
+    margin-bottom: 0px; }
+  .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_30_counter {
+    margin-top: 0.5625rem;
+    text-align: right;
+    color: #ff3456; }
 
 .single-events h2 {
   text-transform: uppercase;
