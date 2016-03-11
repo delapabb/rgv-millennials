@@ -6,10 +6,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-		<?php if (is_page_template('award-application.php')) { ?>
-			<meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/og-image.jpg" />
-			<meta property="og:description" content="<?php echo get_the_excerpt(); ?>" />
+
+		<?php if (get_field('social_card_title')) { ?>
+			<meta property="og:title" content="<?php the_field('social_card_title'); ?>" />
+		<?php } elseif (get_the_title()) { ?>
+			<meta property="og:title" content="<?php the_title(); ?>" />
+		<?php } else { ?>
+			<meta property="og:title" content="<?php bloginfo('name'); ?>" />
 		<?php } ?>
+
+		<?php if (get_field('social_card_description')) { ?>
+			<meta property="og:description" content="<?php the_field('social_card_description'); ?>" />
+		<?php } ?>
+
+		<?php if (is_front_page()) { ?>
+			<meta property="og:type" content="website" />
+		<?php } else { ?>
+			<meta property="og:type" content="article" />
+		<?php } ?>
+
+		<meta property="og:url" content="<?php the_permalink(); ?>" />
+
+		<?php if (get_field('social_card_image')) { ?>
+			<meta property="og:image" content="<?php the_field('social_card_image'); ?>" />
+		<?php } ?>
+
 		<?php wp_head(); ?>
 	</head>
 
