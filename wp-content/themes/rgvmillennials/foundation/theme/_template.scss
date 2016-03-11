@@ -79,13 +79,20 @@
 			fill:$primary-color;
 		}
 	}
+	a.title {
+		margin-right:$small-rem;
+		line-height:$large-rem;
+		@include advent-pro-700;
+		text-transform:uppercase;
+		color:$black;
+	}
 }
 
 nav.drawer-menu {
 	ul.menu {
 		li {
 			a {
-				padding:$medium-rem;
+				padding:$normal-rem;
 				color:$white;
 				@include advent-pro-700;
 				text-transform:uppercase;

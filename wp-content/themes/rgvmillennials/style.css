@@ -3111,9 +3111,16 @@ p.linebreak-spans-on-xxxlarge-down span {
     height: 36px; }
     html.sb-active-left .mobile-nav-bar #mobile-nav-icon {
       fill: #ff3456; }
+  .mobile-nav-bar a.title {
+    margin-right: 0.625rem;
+    line-height: 2.5rem;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333; }
 
 nav.drawer-menu ul.menu li a {
-  padding: 1.875rem;
+  padding: 1.25rem;
   color: #ffffff;
   font-family: 'Advent Pro', sans-serif;
   font-weight: 700;
