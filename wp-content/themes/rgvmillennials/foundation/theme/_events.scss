@@ -4,7 +4,10 @@
 		margin:$xlarge-rem 0rem;
 	}
 	.hero-banner {
-		padding:$large-rem 0rem;
+		padding:$normal-rem 0rem;
+		@include breakpoint(large) {
+			padding:$large-rem 0rem;
+		}
 		background:url('images/millennial-rays-03.png') fixed;
 
 		text-align:center;
@@ -76,7 +79,11 @@
 			@include content;
 
 			.speaker {
-				min-height:rem-calc($base-rem * 17);
+				margin-bottom:$medium-rem;
+				@include breakpoint(large) {
+					margin-bottom:0rem;
+					min-height:rem-calc($base-rem * 16);
+				}
 				p {
 					&.title {
 						margin-top:$small-rem;
@@ -86,14 +93,6 @@
 				.headshot {
 					max-height:rem-calc(144);
 					border-radius:50%;
-				}
-			}
-
-			.column:last-child {
-				float:none;
-				margin:auto;
-				.speaker {
-					min-height:rem-calc($base-rem * 16);
 				}
 			}
 		}

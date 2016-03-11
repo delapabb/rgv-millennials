@@ -1,7 +1,16 @@
 .page {
 	.page-wrap {
+		&.responsive-gutter {
+			padding:0rem 0rem $gutter 0rem;
+			@include breakpoint(xlarge) {
+				padding:0rem $half-gutter $gutter $half-gutter;
+			}
+		}
 		h1 {
 			@include section-title;
+			@include breakpoint(large down) {
+				margin-top:$normal-rem;
+			}
 		}
 		.content {
 			@include content;

@@ -7,9 +7,6 @@
 		}
 	}
 	.page-content {
-		h1 {
-			@include section-title;
-		}
 		.entry-content {
 			@include content;
 		}
@@ -25,10 +22,6 @@
 				color:$white;
 				background:$primary-color;
 			}
-		}
-		padding:0rem 0rem $gutter 0rem;
-		@include breakpoint(xlarge) {
-			padding:0rem $half-gutter $gutter $half-gutter;
 		}
 		#ninja_forms_form_5 {
 			@include breakpoint (xlarge) {
@@ -65,6 +58,12 @@
 				margin-top:$small-rem;
 				text-align: right;
   				color: $primary-color;
+			}
+		}
+		#nf_submit_5, .menu.share-links, .application-sidebar {
+			text-align:center;
+			@include breakpoint(xxlarge) {
+				text-align:left;
 			}
 		}
 	}

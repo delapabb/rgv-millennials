@@ -99,7 +99,7 @@
 
 									<?php while ( have_rows('speakers') ) : the_row(); ?>
 
-										<div class="column">
+										<div class="column small-centered">
 											<div class="speaker">
 												<img class="headshot" src="<?php the_sub_field('speaker_image'); ?>" alt="<?php the_sub_field('speaker_name'); ?>">
 												<p class="title"><?php the_sub_field('speaker_name'); ?></p>

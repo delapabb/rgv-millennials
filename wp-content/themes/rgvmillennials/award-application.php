@@ -2,7 +2,7 @@
 
 get_header(); ?>
 
-	<div class="page-wrap">
+	<div class="page-wrap responsive-gutter">
 
 			<?php if (!is_user_logged_in()) { ?>
 
@@ -44,7 +44,7 @@ get_header(); ?>
 					</main>
 				</div>
 				<div class="small-12 xxlarge-4 columns">
-					<div class="hide-for-large">
+					<div class="hide-for-xxlarge">
 						<hr>
 					</div>
 					<div class="application-sidebar">

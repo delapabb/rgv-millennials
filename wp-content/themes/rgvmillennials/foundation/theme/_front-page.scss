@@ -108,9 +108,7 @@
 					color:$white;
 
 					h3 {
-						@include breakpoint(xxxlarge) {
-							margin-bottom:$small-rem;
-						}
+						margin-bottom:$small-rem;
 					}
 
 					.excerpt {
