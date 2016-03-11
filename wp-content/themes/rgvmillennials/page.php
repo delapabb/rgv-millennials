@@ -9,9 +9,7 @@
 				<div class="column row">
 
 					<header>
-						<h1>
-							<?php the_title(); ?>
-						</h1>
+						<h1><?php the_title(); ?></h1>
 					</header>
 
 					<div class="content">

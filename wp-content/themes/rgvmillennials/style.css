@@ -5667,36 +5667,37 @@ nav.drawer-menu ul.menu li a {
     height: 252px; }
 
 .page-template-award-application .page-content {
-  padding: 2.25rem 0rem; }
-  .page-template-award-application .page-content h1, .page-template-award-application .page-content h2, .page-template-award-application .page-content h3, .page-template-award-application .page-content h4, .page-template-award-application .page-content h5, .page-template-award-application .page-content h6 {
+  padding: 0rem 0rem 2.25rem 0rem; }
+  .page-template-award-application .page-content h1 {
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    line-height: 1;
+    margin: 2.25rem 0rem 0.5625rem 0rem; }
+  .page-template-award-application .page-content .entry-content h1, .page-template-award-application .page-content .entry-content h2, .page-template-award-application .page-content .entry-content h3, .page-template-award-application .page-content .entry-content h4, .page-template-award-application .page-content .entry-content h5, .page-template-award-application .page-content .entry-content h6 {
     font-size: 2.25rem;
     line-height: 1.3333;
     font-weight: 400;
     margin: 0rem 0rem 1.125rem 0rem; }
-  .page-template-award-application .page-content p {
+  .page-template-award-application .page-content .entry-content p {
     line-height: 1.6666;
     margin: 0rem 0rem 1.125rem 0rem; }
-  .page-template-award-application .page-content .button {
+  .page-template-award-application .page-content .entry-content .button {
     line-height: 1.6666;
     margin: 0rem 0rem 1.125rem 0rem; }
-  .page-template-award-application .page-content .application-sidebar h1, .page-template-award-application .page-content .application-sidebar h2, .page-template-award-application .page-content .application-sidebar h3, .page-template-award-application .page-content .application-sidebar h4, .page-template-award-application .page-content .application-sidebar h5, .page-template-award-application .page-content .application-sidebar h6 {
+  .page-template-award-application .page-content .application-sidebar h2 {
+    text-transform: uppercase;
     font-size: 2.25rem;
-    line-height: 1.3333;
-    font-weight: 400;
-    margin: 0rem 0rem 1.125rem 0rem; }
-  .page-template-award-application .page-content .application-sidebar p {
-    line-height: 1.6666;
-    margin: 0rem 0rem 1.125rem 0rem; }
-  .page-template-award-application .page-content .application-sidebar .button {
-    line-height: 1.6666;
-    margin: 0rem 0rem 1.125rem 0rem; }
+    line-height: 1;
+    margin: 2.25rem 0rem 0.5625rem 0rem; }
+  .page-template-award-application .page-content .application-sidebar img {
+    margin-top: 0.3125rem; }
   .page-template-award-application .page-content .application-sidebar .button {
     margin-top: 1.125rem;
     color: #ffffff;
     background: #ff3456; }
   @media screen and (min-width: 37.5em) {
     .page-template-award-application .page-content {
-      padding: 2.25rem 1.125rem; } }
+      padding: 0rem 1.125rem 2.25rem 1.125rem; } }
   @media screen and (min-width: 37.5em) {
     .page-template-award-application .page-content #ninja_forms_form_5 #ninja_forms_field_7_div_wrap {
       float: left;
