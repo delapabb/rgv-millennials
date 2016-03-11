@@ -31,6 +31,11 @@ get_header(); ?>
 								<div class="entry-content">
 									<?php the_content(); ?>
 								</div>
+								<hr>
+								<ul class="menu share-links text-right">
+									<li>Share This</li>
+									<li><a href="#" class="share-on-fb"><img class="icon-facebook" src="<?php echo get_template_directory_uri(); ?>/images/icon-facebook.svg" alt="Facebook"></a></li>
+								</ul>
 
 							</article>
 

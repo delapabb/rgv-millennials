@@ -52,7 +52,7 @@
 
 						<ul class="menu share-links text-center">
 							<li>Share This Event</li>
-							<li><div class="fb-share-button" data-href="<?php the_permalink(); ?>" data-layout="button"></div></li>
+							<li><a href="#" class="share-on-fb"><img class="icon-facebook" src="<?php echo get_template_directory_uri(); ?>/images/icon-facebook.svg" alt="Facebook"></a></li>
 						</ul>
 
 						<?php if ( get_field('event_intro_text') ) { ?>

@@ -3044,13 +3044,10 @@ p.linebreak-spans-on-xxxlarge-down span {
   .menu.share-links li {
     display: inline-block; }
     .menu.share-links li a {
-      padding: 0rem;
-      margin-left: 0.25rem; }
+      padding: 0rem; }
       .menu.share-links li a img {
-        margin-top: -0.125rem; }
-    .menu.share-links li .fb_iframe_widget {
-      display: block;
-      margin-top: -0.625rem; }
+        margin: -1.125rem 0rem -0.9375rem;
+        height: 1.25rem; }
 
 .logged-out, .error404 {
   background: #333333; }
@@ -3397,7 +3394,7 @@ nav.drawer-menu ul.menu li a {
       .single-events .hero-banner h1 {
         font-size: 3.75rem; } }
   .single-events .hero-banner .intro-text {
-    margin-top: 1.25rem;
+    margin-top: 0.625rem;
     max-width: 37.125rem;
     margin-left: auto;
     margin-right: auto; }

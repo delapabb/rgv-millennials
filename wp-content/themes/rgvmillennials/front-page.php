@@ -55,9 +55,9 @@
 									<a class="button" href="<?php echo site_url(); ?>/2016millennial/">Highlight Your Work</a>
 								</div>
 
-								<ul class="menu share-links">
+								<ul class="menu share-links text-center">
 									<li>Share This</li>
-									<li><div class="fb-share-button" data-href="http://www.rgvmillennials.org/2016millennial" data-layout="button"></div></li>
+									<li><a href="#" class="share-on-fb"><img class="icon-facebook" src="<?php echo get_template_directory_uri(); ?>/images/icon-facebook.svg" alt="Facebook"></a></li>
 								</ul>
 							</article>
 						</div>
