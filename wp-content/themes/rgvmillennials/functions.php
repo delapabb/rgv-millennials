@@ -91,3 +91,14 @@ remove_action( 'ninja_forms_display_css', 'ninja_forms_display_css');
 * Remove Ninja Forms "Append Ninja Form" metabox in post edit screens*
 */
 remove_action('add_meta_boxes','ninja_forms_add_custom_box' );
+
+/**
+* Backend styles for users - This needs to be moved out into a plugin later 
+*/
+function tgmedia_load_custom_wp_admin_style() {
+	if (current_user_can('editor')) {
+	    wp_register_style( 'tgmedia_wp_admin_css', get_template_directory_uri() . '/admin-style.css', false, '1.0.0' );
+	    wp_enqueue_style( 'tgmedia_wp_admin_css' );
+	}
+}
+add_action( 'admin_enqueue_scripts', 'tgmedia_load_custom_wp_admin_style', 99);

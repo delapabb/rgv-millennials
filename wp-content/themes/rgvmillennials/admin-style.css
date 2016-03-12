@@ -1,0 +1,159 @@
+/* links & link interactions */
+a { color:#444444; }
+
+#mw_adminimize_admin_bar #mw_title {
+    font-family: "Open Sans", sans-serif!important;
+}
+
+/* buttons */
+
+.button.button-primary, .button.button-secondary {
+	background:#444444;
+	color:#ffffff;
+	border:0px;
+	border-radius:0px;
+	-webkit-border-radius:0px;
+	text-shadow:none;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+}
+
+.button.button-primary:hover,
+.button.button-primary:active,
+.button.button-secondary:hover,
+.button-button-secondary:active {
+	color:#ffffff;
+}
+
+/* edit.php */
+
+/* Hide the search bar */
+.search-box {
+	display:none;
+}
+
+/* "Add New" button */
+.wrap .page-title-action {
+	background:#444444;
+	color:#ffffff;
+	font-weight:300;
+	border-radius:0px;
+	text-transform:uppercase;
+}
+.wrap .page-title-action:hover, .wrap .page-title-action:active {
+	
+}
+
+/* The "All / Published / Trash" counts list */
+ul.subsubsub {
+	margin:10px 0px;
+}
+
+/* Posts filter drop-downs table */
+#posts-filter .tablenav.top {
+	margin:15px 0px;
+}
+#doaction {
+  background:#444444;
+	color:#ffffff;
+	border-radius:0;
+	border:0px;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	text-transform:uppercase;
+}
+#doaction:hover, #doaction:active {
+	
+}
+#post-query-submit {
+  background:#444444;
+	color:#ffffff;
+	border-radius:0;
+	border:0px;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	text-transform:uppercase;
+}
+#post-query-submit:hover, #post-query-submit:active {
+	
+}
+
+/* The post lists table */
+
+table.wp-list-table {
+	border:0px;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+}
+
+.striped > tbody > :nth-child(2n+1) {
+	background:#ffffff;
+}
+
+table.wp-list-table .manage-column {
+	border-bottom:0px;
+}
+
+#title {
+	font-size:18px;
+}
+
+#the-list .page-title strong, #the-list .page-title strong a {
+	font-weight:300;
+}
+
+#the-list .page-title .row-actions .inline {
+	display:none;
+}
+
+#the-list .author, #author, #the-list .comments, #comments {
+	display:none;
+}
+
+#date {
+	width:20%;
+}
+
+#the-list .column-date br {
+	display:none;
+}
+
+#the-list .column-date abbr {
+	margin-left:5px;
+}
+
+table.wp-list-table tfoot {
+	display:none;
+}
+
+#posts-filter .tablenav.bottom {
+	display:none;
+}
+
+#the-list button.toggle-row {
+	display:none;
+}
+
+/* post.php */
+
+.nf-insert-form {
+	display:none!important;
+}
+
+/* profile.php */
+
+#your-profile .user-rich-editing-wrap {
+	display:none;
+}
+
+#your-profile .user-comment-shortcuts-wrap {
+	display:none;
+}
+
+#your-profile .show-admin-bar {
+	display:none;
+}
+
+#your-profile .user-admin-color-wrap { 
+	display:none; 
+}
