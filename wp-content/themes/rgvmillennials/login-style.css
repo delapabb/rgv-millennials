@@ -1,0 +1,52 @@
+html,body {
+	background:#333333;
+}
+
+.login h1 a {
+    background-image: url(images/rgvm-logo.svg);
+    background-image: none,url(images/rgvm-logo.svg);
+    -webkit-background-size: 120px;
+    background-size: 120px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 150px;
+    font-size: 20px;
+    line-height: 1.3em;
+    margin: 0 auto 25px;
+    padding: 0;
+    width: 320px;
+    text-indent: -9999px;
+    outline: 0;
+    display: block;
+}
+
+.login #nav, .login #backtoblog {
+	box-sizing:border-box;
+	padding:5px 0px;
+	margin:10px 0px;
+	display:block;
+	width:50%;
+}
+
+.login #nav a, .login #backtoblog a {
+	color:#dddddd;
+	font-size:12px;
+	text-decoration:underline;
+}
+
+.login #nav a:hover, .login #backtoblog a:hover,
+.login #nav a:active, .login #backtoblog a:active,
+.login #nav a:focus, .login #backtoblog a:focus {
+	color:#ffffff;
+}
+
+.login #nav {
+	float:right;
+	text-align:right;
+	padding-right:3px;
+}
+
+.login #backtoblog {
+	float:left;
+	padding-left:3px;
+}

@@ -95,10 +95,25 @@ remove_action('add_meta_boxes','ninja_forms_add_custom_box' );
 /**
 * Backend styles for users - This needs to be moved out into a plugin later 
 */
-function tgmedia_load_custom_wp_admin_style() {
+function rgvmillennials_load_custom_login_style() {
+	wp_enqueue_style( 'rgvmillennials_login', get_template_directory_uri() . '/login-style.css', false );
+}
+add_action( 'login_enqueue_scripts', 'rgvmillennials_load_custom_login_style', 10 );
+
+function rgvmillennials_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'rgvmillennials_login_logo_url' );
+
+function rgvmillennials_login_logo_url_title() {
+    return 'RGV Millennials';
+}
+add_filter( 'login_headertitle', 'rgvmillennials_login_logo_url_title' );
+
+function rgvmillennials_load_custom_wp_admin_style() {
 	if (current_user_can('editor')) {
-	    wp_register_style( 'tgmedia_wp_admin_css', get_template_directory_uri() . '/admin-style.css', false, '1.0.0' );
-	    wp_enqueue_style( 'tgmedia_wp_admin_css' );
+	    wp_register_style( 'rgvmillennials_wp_admin_css', get_template_directory_uri() . '/admin-style.css', false, '1.0.0' );
+	    wp_enqueue_style( 'rgvmillennials_wp_admin_css' );
 	}
 }
-add_action( 'admin_enqueue_scripts', 'tgmedia_load_custom_wp_admin_style', 99);
+add_action( 'admin_enqueue_scripts', 'rgvmillennials_load_custom_wp_admin_style', 99);
