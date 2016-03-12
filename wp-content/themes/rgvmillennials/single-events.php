@@ -44,7 +44,7 @@
 							<p><a class="map-link" href="<?php echo $event_map_link ?>" target="_blank">
 									<?php the_field('event_venue') ?>
 							</a></p>
-						<? } ?>
+						<?php } ?>
 
 						<?php if ( get_field('event_city') ) { ?>
 							<p><?php the_field('event_city') ?></p>
