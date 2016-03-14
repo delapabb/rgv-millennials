@@ -3049,17 +3049,16 @@ p.linebreak-spans-on-xxxlarge-down span {
         margin: -1.125rem 0rem -0.9375rem;
         height: 1.25rem; }
 
-.logged-out, .error404 {
+.error404 #sb-site {
   background: #333333; }
-  .logged-out #sb-site, .error404 #sb-site {
-    background: #333333; }
-  .logged-out .landing, .error404 .landing {
-    padding: 2.5rem;
-    text-align: center;
-    color: #ffffff; }
-    .logged-out .landing .rgvm-logo, .error404 .landing .rgvm-logo {
-      height: 360px;
-      margin-bottom: 1.25rem; }
+
+.error404 .landing {
+  padding: 2.5rem;
+  text-align: center;
+  color: #ffffff; }
+  .error404 .landing .rgvm-logo {
+    height: 360px;
+    margin-bottom: 1.25rem; }
 
 .page-template-award-application {
   background: #ffffff; }

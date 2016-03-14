@@ -4,18 +4,6 @@ get_header(); ?>
 
 	<div class="page-wrap responsive-gutter">
 
-			<?php if (!is_user_logged_in()) { ?>
-
-				<div class="page-header">
-					<div class="row">
-						<div class="small-12 columns text-center">
-							<img class="rgvm-logo" src="<?php bloginfo('template_url'); ?>/images/rgvm-logo.svg" alt="RGV Millennials Logo">
-						</div>
-					</div>
-				</div>
-
-			<?php } ?>
-
 		<div class="page-content pad-top">
 			<div class="row">
 				<div class="small-12 xxlarge-8 columns">

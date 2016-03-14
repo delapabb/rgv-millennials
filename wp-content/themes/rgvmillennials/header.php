@@ -36,8 +36,6 @@
 
 	<body <?php body_class(); ?>>
 
-	<?php if (is_user_logged_in()) { ?>
-
 		<div class="sb-slidebar sb-left">
 			<nav class="drawer-menu" role="nav">
 				<?php $args = array(
@@ -104,5 +102,3 @@
 		</div>
 
 		<div id="sb-site"><!-- Page wrapper for Slidebars Script -->
-
-	<?php } ?>
