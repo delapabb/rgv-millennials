@@ -9,7 +9,7 @@
 					<div class="small-12 columns">
 						<img class="rgvm-logo" src="<?php echo get_template_directory_uri(); ?>/images/rgvm-logo.svg" alt="RGV Millennials">
 						<div class="tagline">
-							<p>RGV Millennials is an initiative led by young adults across the Rio Grande Valley promoting hands-on regional advancement of public polilcy, social progress, entrepreneurship, and education.</p>
+							<p>RGV Millennials is an affinity group of United Way of Southern Cameron County led by young adults across the Rio Grande Valley promoting hands-on regional advancement of public polilcy, social progress, entrepreneurship, and education.</p>
 						</div>
 					</div>
 				</div>
@@ -18,7 +18,7 @@
 			<div class="millennial-banner">
 				<div class="row">
 					<div class="small-12 columns">
-						<p class="linebreak-spans-on-large"><span>It's Grassroots Regional Leadership</span> <span>By Rio Grande Valley Millennials</span></p>
+						<p class="linebreak-spans-on-large"><span>It Is Grassroots Regional Leadership</span> <span>By Rio Grande Valley Millennials</span></p>
 					</div>
 				</div>
 			</div>
@@ -84,7 +84,7 @@
 									<header>
 										<h3>RGV Millennial of The Year Award</h3>
 									</header>
-									<p class="excerpt">This year, we’ll be recognizing one Millennial at our RGV Millennial Summit on March 23, 2016. This is the official application form to be considered for the award. All applicants will be highlighted at the summit, and the deadline for application is March 16, 2016.</p>
+									<p class="excerpt">This year, we will be recognizing one Millennial at our RGV Millennial Summit on March 23, 2016. This is the official application form to be considered for the award. All applicants will be highlighted at the summit, and the deadline for application is March 16, 2016.</p>
 									<a class="button" href="<?php echo site_url(); ?>/2016millennial/">Highlight Your Work</a>
 								</div>
 
