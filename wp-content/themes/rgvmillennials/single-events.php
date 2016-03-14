@@ -39,7 +39,7 @@
 						<?php } ?>
 
 						<?php if ( get_field('event_venue') ) { ?>
-							<?php  	$event_map_array = get_field('location');
+							<?php  	$event_map_array = get_field('event_map_link');
 									$event_map_link = 'https://maps.google.com/maps?q=' . $event_map_array['address']; ?>
 							<p><a class="map-link" href="<?php echo $event_map_link ?>" target="_blank">
 									<?php the_field('event_venue') ?>

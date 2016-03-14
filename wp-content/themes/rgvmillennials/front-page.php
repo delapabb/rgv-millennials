@@ -29,12 +29,45 @@
 						<header>
 							<h2>Our Next Event</h2>
 						</header>
-						<h3>2016 RGV Millennials Summit</h3>
-						<div class="event-details">
-							<p>March 23, 2016</p>
-							<p>Edinburg Conference Center at Renaissance</p>
-						</div>
-						<a class="button" href="<?php echo site_url(); ?>/events/2016-millennial-summit/">Attend The Summit</a>
+
+						<?php
+							$event_query_args = array( 'post_type' => 'events', 'p' => '95' ); 
+							$event_query = new WP_Query($event_query_args);
+						?>
+
+						<?php if ($event_query->have_posts()): while($event_query->have_posts()): $event_query->the_post(); ?>
+
+							<h3><?php the_title(); ?></h3>
+							<div class="event-details">
+
+								<?php if ( get_field('event_start_date') && get_field('event_end_date') ) { ?>
+									<?php if ( get_field('event_start_date') == get_field('event_end_date') ) { ?>
+										<p><?php the_field('event_start_date'); ?></p>
+									<?php } else { ?>
+										<p><?php the_field('event_start_date'); ?> to <?php the_field('event_end_date'); ?></p>
+									<?php } ?>					
+								<?php } elseif ( get_field('event_start_date') ) { ?>
+									<p><?php the_field('event_start_date'); ?></p>
+								<?php } elseif ( get_field('event_end_date') ) { ?>
+									<p><?php the_field('event_end_date'); ?></p>
+								<?php } ?>
+
+								<?php if ( get_field('event_venue') ) { ?>
+									<?php  	$event_map_array = get_field('event_map_link');
+											$event_map_link = 'https://maps.google.com/maps?q=' . $event_map_array['address']; ?>
+									<p><a class="map-link" href="<?php echo $event_map_link ?>" target="_blank">
+											<?php the_field('event_venue') ?>
+									</a></p>
+								<?php } ?>
+
+							</div>
+
+							<a class="button" href="<?php the_permalink(); ?>">Attend The Summit</a>
+
+						<?php endwhile; ?>
+
+						<?php endif; ?>
+
 					</div>
 				</div>
 			</section>

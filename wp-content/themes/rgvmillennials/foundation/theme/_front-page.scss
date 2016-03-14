@@ -62,6 +62,10 @@
 		h3 {
 			@include roboto-300;
 		}
+		a.map-link {
+			color:$white;
+			text-decoration:underline;
+		}
 		.event-details {
 			margin:0rem 0rem $normal-rem 0rem;
 		}
