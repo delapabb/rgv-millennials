@@ -8,8 +8,6 @@ var sassPaths = [
 
 var jsPaths = [
   'bower_components/jquery/dist/jquery.js',
-  'bower_components/foundation-sites/js/foundation.core.js',
-  'bower_components/foundation-sites/js/foundation.util.mediaQuery.js',
   'thirdparty/slidebars/slidebars.js',
   'js/app.js'
 ];

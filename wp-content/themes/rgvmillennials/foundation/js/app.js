@@ -1,5 +1,3 @@
-$(document).foundation();
-
 // Initialize Sidebars
 (function($) {
 $(document).ready(function() {

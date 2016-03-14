@@ -3111,7 +3111,8 @@ p.linebreak-spans-on-xxxlarge-down span {
   .sb-active-left .mobile-nav-bar {
     margin-left: -1px; }
   .mobile-nav-bar #mobile-nav-icon {
-    height: 36px; }
+    height: 36px;
+    cursor: pointer; }
     html.sb-active-left .mobile-nav-bar #mobile-nav-icon {
       fill: #ff3456; }
   .mobile-nav-bar a.title {
