@@ -134,7 +134,7 @@ ul.subsubsub {
 	
 }
 
-/* The post lists table */
+/* edit.php The post lists table */
 
 table.wp-list-table {
 	border:0px;
@@ -187,6 +187,10 @@ table.wp-list-table tfoot {
 }
 
 #the-list button.toggle-row {
+	display:none;
+}
+
+#the-list .row-actions .trash {
 	display:none;
 }
 
