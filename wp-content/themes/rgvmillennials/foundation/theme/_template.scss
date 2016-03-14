@@ -43,12 +43,18 @@
 			& > li {
 			display:inline-block;
 				& > a {
-					padding:$normal-rem;
+					padding:($normal-rem + rem-calc(1)) $small-rem;
 
-					font-size:$normal-rem;
-					color:$black;
 					@include advent-pro-700;
+					color:$black;
 					text-transform:uppercase;
+
+					font-size:$slight-rem;
+
+					@include breakpoint(xxxlarge) {
+						padding:$normal-rem;
+						font-size:$normal-rem;
+					}
 
 					&:hover {
 						color:$primary-color;

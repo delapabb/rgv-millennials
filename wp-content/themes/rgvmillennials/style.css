@@ -3085,12 +3085,16 @@ p.linebreak-spans-on-xxxlarge-down span {
     .main-menu nav ul.menu > li {
       display: inline-block; }
       .main-menu nav ul.menu > li > a {
-        padding: 1.25rem;
-        font-size: 1.25rem;
-        color: #333333;
+        padding: 1.3125rem 0.625rem;
         font-family: 'Advent Pro', sans-serif;
         font-weight: 700;
-        text-transform: uppercase; }
+        color: #333333;
+        text-transform: uppercase;
+        font-size: 1.125rem; }
+        @media screen and (min-width: 62.5em) {
+          .main-menu nav ul.menu > li > a {
+            padding: 1.25rem;
+            font-size: 1.25rem; } }
         .main-menu nav ul.menu > li > a:hover {
           color: #ff3456; }
 
