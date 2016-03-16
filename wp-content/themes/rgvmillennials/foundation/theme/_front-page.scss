@@ -99,20 +99,28 @@
 			article {
 				@include content;
 				.article-image {
-					background:url('images/2016-award-frontpage-teaser.jpg');
-	
 					@include background-image-cover;
 
-					min-height:rem-calc(430);
-					padding:$half-gutter;
-					@include breakpoint(xlarge) {
-						padding:$gutter;
+					.image-mask {
+						background:url('images/mask-65.png');
+
+						min-height:rem-calc(430);
+						padding:$half-gutter;
+							@include breakpoint(xlarge) {
+								padding:$gutter;
+						}
 					}
 
 					color:$white;
 
 					h3 {
 						margin-bottom:$small-rem;
+						a {
+							color:$white;
+							&:hover, &:active {
+								color:$white;
+							}
+						}
 					}
 
 					.excerpt {

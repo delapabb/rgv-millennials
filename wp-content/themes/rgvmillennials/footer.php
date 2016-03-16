@@ -22,15 +22,26 @@
 		<?php wp_footer(); ?>
 
 		<?php if (is_front_page()) { ?>
-			<script>
-				$(document).ready(function(){
-					$(".share-on-fb").on("click",function(){
-			    		var fbpopup = window.open("https://www.facebook.com/sharer/sharer.php?u=<?php echo site_url(); ?>/2016millennial/", "pop", "width=320, height=300, scrollbars=no");
-			    	return false;
-					});
-				});
-			</script>
+
+		<?php $front_post_teaser_query = new WP_Query('posts_per_page=1'); ?>
+
+			<?php if ($front_post_teaser_query->have_posts()) { ?>
+				<?php while ($front_post_teaser_query->have_posts()) { $front_post_teaser_query->the_post(); ?>
+					<script>
+						$(document).ready(function(){
+							$(".share-on-fb").on("click",function(){
+					    		var fbpopup = window.open("https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>", "pop", "width=320, height=300, scrollbars=no");
+					    	return false;
+							});
+						});
+					</script>
+				<?php } ?>
+			<?php } ?>
+
+			<?php wp_reset_postdata(); ?>
+
 		<?php } else { ?>
+
 			<script>
 				$(document).ready(function(){
 					$(".share-on-fb").on("click",function(){
@@ -39,6 +50,7 @@
 					});
 				});
 			</script>
+
 		<?php } ?>
 
 		<?php if(!is_user_logged_in()) { ?>

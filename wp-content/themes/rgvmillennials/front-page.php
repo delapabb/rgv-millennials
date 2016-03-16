@@ -77,20 +77,36 @@
 						<header>
 							<h2>Latest</h2>
 						</header>
-						<article>
-							<div class="article-image">
-								<header>
-									<h3>RGV Millennial of The Year Award</h3>
-								</header>
-								<p class="excerpt">This year, we will be recognizing one Millennial at our RGV Millennial Summit on March 23, 2016. This is the official application form to be considered for the award. All applicants will be highlighted at the summit, and the deadline for application is March 16, 2016.</p>
-								<a class="button" href="<?php echo site_url(); ?>/2016millennial/">Highlight Your Work</a>
-							</div>
 
-							<ul class="menu share-links text-center">
-								<li>Share This</li>
-								<li><a href="#" class="share-on-fb"><img class="icon-facebook" src="<?php echo get_template_directory_uri(); ?>/images/icon-facebook.svg" alt="Facebook"></a></li>
-							</ul>
-						</article>
+						<?php $front_post_teaser_query = new WP_Query('posts_per_page=1'); ?>
+
+						<?php if ($front_post_teaser_query->have_posts()) { ?>
+
+							<?php while ($front_post_teaser_query->have_posts()) { $front_post_teaser_query->the_post(); ?>
+
+								<article>
+									<div class="article-image" style="background:url('<?php the_field('social_card_image') ?>');">
+										<div class="image-mask">
+											<header>
+												<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+											</header>
+											<p class="excerpt"><?php the_field('social_card_description') ?></p>
+											<a class="button" href="<?php the_permalink(); ?>">Read More</a>
+										</div>
+									</div>
+
+									<ul class="menu share-links text-center">
+										<li>Share This</li>
+										<li><a href="#" class="share-on-fb"><img class="icon-facebook" src="<?php echo get_template_directory_uri(); ?>/images/icon-facebook.svg" alt="Facebook"></a></li>
+									</ul>
+								</article>
+
+							<?php } ?>
+
+						<?php } ?>
+
+						<?php wp_reset_postdata(); ?>
+
 					</div>
 				</div>
 				<div class="small-12 xxxlarge-3 columns">

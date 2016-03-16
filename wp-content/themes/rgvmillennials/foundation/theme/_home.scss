@@ -1,0 +1,44 @@
+.blog {
+	.page-wrap {
+		&.responsive-gutter {
+			padding:0rem 0rem $gutter 0rem;
+			@include breakpoint(xlarge) {
+				padding:0rem $half-gutter $gutter $half-gutter;
+			}
+		}
+		main {
+			h1 {
+				@include section-title;
+				@include breakpoint(large down) {
+					margin-top:$normal-rem;
+				}
+			}
+			article {
+				@include content;
+				margin-bottom:$large-rem;
+				h2 {
+					a {
+						color:$black;
+						&:hover, &:active {
+							color:$black;
+						}
+					}
+				}
+				.button {
+					@include custom-button($secondary-color, $white);
+					background:$secondary-color;
+					color:$white;
+				}
+			}
+			.featured-image {
+				width:100%;
+				margin:-($small-rem) 0rem $normal-rem 0rem;
+			}
+			@include breakpoint(xxxlarge) {
+				.sidebar {
+					margin-top:$large-rem;
+				}
+			}
+		}
+	}
+}

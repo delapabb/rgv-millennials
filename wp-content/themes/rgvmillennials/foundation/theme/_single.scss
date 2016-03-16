@@ -1,0 +1,39 @@
+.single {
+	.page-wrap {
+		&.responsive-gutter {
+			padding:0rem 0rem $gutter 0rem;
+			@include breakpoint(xlarge) {
+				padding:0rem $half-gutter $gutter $half-gutter;
+			}
+		}
+		main {
+			@include content;
+			.sidebar {
+				.button {
+					margin-top:$normal-rem;
+				}
+			}
+			h1 {
+				margin-top:$normal-rem;
+				@include breakpoint(xxxlarge) {
+					margin-top:$large-rem;
+				}
+			}
+			.share-links {
+				margin:-($normal-rem) 0rem $small-rem 0rem;
+			}
+			.featured-image {
+				width:100%;
+				margin:0rem 0rem $normal-rem 0rem;
+			}
+			@include breakpoint(xxxlarge) {
+				.sidebar {
+					margin-top:$large-rem;
+				}
+				.content {
+					padding-bottom:$gutter;
+				}
+			}
+		}
+	}
+}

@@ -32,18 +32,7 @@ get_header(); ?>
 					</main>
 				</div>
 				<div class="small-12 xxlarge-4 columns">
-					<div class="hide-for-xxlarge">
-						<hr>
-					</div>
-					<div class="application-sidebar">
-						<h2>2016 Summit</h2>
-						<a href="https://www.facebook.com/events/1065680763498418/" target="_blank">
-							<img src="<?php bloginfo('template_url'); ?>/images/2016-summit-flyer.jpg" alt="2016 RGV Millennials Summit Flyer Invitation">
-						</a>
-						<div class="text-center">
-							<a href="https://www.eventbrite.com/e/rgv-millennials-2016-summit-tickets-21846986926" class="button" target="_blank">Register To Attend</a>
-						</div>
-					</div>
+					<?php get_template_part('sidebar'); ?>
 				</div>
 			</div>
 		</div>
