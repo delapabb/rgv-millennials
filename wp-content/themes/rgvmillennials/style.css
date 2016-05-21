@@ -3049,6 +3049,39 @@ p.linebreak-spans-on-xxxlarge-down span {
         margin: -1.125rem 0rem -0.9375rem;
         height: 1.25rem; }
 
+.reach-out aside .links {
+  padding: 1.125rem 1.125rem 0rem 1.125rem;
+  background: url("images/millennial-rays-02.png") #ff3456;
+  border: 1px solid transparent; }
+  .reach-out aside .links .button {
+    margin-bottom: 1.25rem;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    color: #333333;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
+    .reach-out aside .links .button:hover {
+      background: #ffffff;
+      color: #333333;
+      border: 2px solid #ffffff; }
+    @media screen and (min-width: 37.5em) {
+      .reach-out aside .links .button {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        width: 12.5rem;
+        margin-left: auto;
+        margin-right: auto; } }
+    @media screen and (min-width: 62.5em) {
+      .reach-out aside .links .button {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0; } }
+
 .error404 #sb-site {
   background: #333333; }
 
@@ -3385,38 +3418,6 @@ nav.drawer-menu ul.menu li a {
         background: #ffffff;
         color: #333333;
         border: 2px solid #ffffff; }
-  .home .post.teaser .reach-out aside .links {
-    padding: 1.125rem 1.125rem 0rem 1.125rem;
-    background: url("images/millennial-rays-02.png") #ff3456;
-    border: 1px solid transparent; }
-    .home .post.teaser .reach-out aside .links .button {
-      margin-bottom: 1.25rem;
-      border: 2px solid #ffffff;
-      color: #ffffff;
-      color: #333333;
-      display: block;
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0; }
-      .home .post.teaser .reach-out aside .links .button:hover {
-        background: #ffffff;
-        color: #333333;
-        border: 2px solid #ffffff; }
-      @media screen and (min-width: 37.5em) {
-        .home .post.teaser .reach-out aside .links .button {
-          display: block;
-          width: 100%;
-          margin-left: 0;
-          margin-right: 0;
-          width: 12.5rem;
-          margin-left: auto;
-          margin-right: auto; } }
-      @media screen and (min-width: 62.5em) {
-        .home .post.teaser .reach-out aside .links .button {
-          display: block;
-          width: 100%;
-          margin-left: 0;
-          margin-right: 0; } }
 
 .page-template-award-application .page-header {
   padding: 2.5rem;
@@ -3616,10 +3617,7 @@ nav.drawer-menu ul.menu li a {
         font-size: 1.125rem;
         color: #666666; }
 
-.sidebar hr {
-  margin-bottom: 2.5rem; }
-
-.sidebar .button {
-  margin: 1.25rem 0rem 1.25rem 0rem;
-  color: #ffffff;
-  background: #ff3456; }
+.sidebar {
+  margin-top: 1.25rem; }
+  .sidebar hr {
+    margin-bottom: 2.5rem; }

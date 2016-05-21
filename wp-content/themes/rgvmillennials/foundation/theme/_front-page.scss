@@ -140,29 +140,5 @@
 			}
 		}
 		
-		.reach-out {
-			aside {
-				.links {
-					padding:$half-gutter $half-gutter 0rem $half-gutter;
-					background:url('images/millennial-rays-02.png') $primary-color;
-					border:1px solid transparent;
-					.button {
-						margin-bottom:$normal-rem;
-						@include custom-button($white, $black);
-						color:$black;
-						@include button-expand(true);
-						@include breakpoint(xlarge) {
-							@include button-expand(fale);
-							width:rem-calc(200);
-							margin-left:auto;
-							margin-right:auto;
-						}
-						@include breakpoint(xxxlarge) {
-							@include button-expand(true);
-						}
-					}
-				}
-			}
-		}
 	}
 }
