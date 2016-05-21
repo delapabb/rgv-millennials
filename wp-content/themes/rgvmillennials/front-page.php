@@ -29,7 +29,7 @@
 					</header>
 
 					<?php
-						$event_query_args = array( 'post_type' => 'events', 'p' => '95' ); 
+						$event_query_args = array( 'post_type' => 'events', 'posts_per_page' => '1' ); 
 						$event_query = new WP_Query($event_query_args);
 					?>
 
@@ -60,7 +60,7 @@
 
 						</div>
 
-						<a class="button" href="<?php the_permalink(); ?>">Attend The Summit</a>
+						<a class="button" href="<?php the_permalink(); ?>">Attend This Event</a>
 
 					<?php endwhile; ?>
 
