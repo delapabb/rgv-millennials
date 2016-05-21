@@ -3145,52 +3145,52 @@ nav.drawer-menu ul.menu li a {
   padding: 2.25rem 1.125rem 2.25rem 1.125rem;
   text-align: center; }
 
-.blog .page-wrap.responsive-gutter {
+.blog .page-wrap.responsive-gutter, .archive .page-wrap.responsive-gutter {
   padding: 0rem 0rem 2.25rem 0rem; }
   @media screen and (min-width: 37.5em) {
-    .blog .page-wrap.responsive-gutter {
+    .blog .page-wrap.responsive-gutter, .archive .page-wrap.responsive-gutter {
       padding: 0rem 1.125rem 2.25rem 1.125rem; } }
 
-.blog .page-wrap main h1 {
+.blog .page-wrap main h1, .archive .page-wrap main h1 {
   text-transform: uppercase;
   font-size: 2.5rem;
   line-height: 1;
   margin: 2.5rem 0rem 0.625rem 0rem; }
   @media screen and (max-width: 37.4375em) {
-    .blog .page-wrap main h1 {
+    .blog .page-wrap main h1, .archive .page-wrap main h1 {
       margin-top: 1.25rem; } }
 
-.blog .page-wrap main article {
+.blog .page-wrap main article, .archive .page-wrap main article {
   margin-bottom: 2.5rem; }
-  .blog .page-wrap main article h1, .blog .page-wrap main article h2, .blog .page-wrap main article h3, .blog .page-wrap main article h4, .blog .page-wrap main article h5, .blog .page-wrap main article h6 {
+  .blog .page-wrap main article h1, .blog .page-wrap main article h2, .blog .page-wrap main article h3, .blog .page-wrap main article h4, .blog .page-wrap main article h5, .blog .page-wrap main article h6, .archive .page-wrap main article h1, .archive .page-wrap main article h2, .archive .page-wrap main article h3, .archive .page-wrap main article h4, .archive .page-wrap main article h5, .archive .page-wrap main article h6 {
     font-size: 2.5rem;
     line-height: 1.3333;
     font-weight: 400;
     margin: 0rem 0rem 1.25rem 0rem; }
-  .blog .page-wrap main article p {
+  .blog .page-wrap main article p, .archive .page-wrap main article p {
     margin: 0rem 0rem 1.25rem 0rem; }
-  .blog .page-wrap main article .button {
+  .blog .page-wrap main article .button, .archive .page-wrap main article .button {
     margin: 0rem 0rem 1.25rem 0rem; }
-  .blog .page-wrap main article h2 a {
+  .blog .page-wrap main article h2 a, .archive .page-wrap main article h2 a {
     color: #333333; }
-    .blog .page-wrap main article h2 a:hover, .blog .page-wrap main article h2 a:active {
+    .blog .page-wrap main article h2 a:hover, .blog .page-wrap main article h2 a:active, .archive .page-wrap main article h2 a:hover, .archive .page-wrap main article h2 a:active {
       color: #333333; }
-  .blog .page-wrap main article .button {
+  .blog .page-wrap main article .button, .archive .page-wrap main article .button {
     border: 2px solid #007eff;
     color: #007eff;
     background: #007eff;
     color: #ffffff; }
-    .blog .page-wrap main article .button:hover {
+    .blog .page-wrap main article .button:hover, .archive .page-wrap main article .button:hover {
       background: #007eff;
       color: #ffffff;
       border: 2px solid #007eff; }
 
-.blog .page-wrap main .featured-image {
+.blog .page-wrap main .featured-image, .archive .page-wrap main .featured-image {
   width: 100%;
   margin: -0.625rem 0rem 1.25rem 0rem; }
 
 @media screen and (min-width: 62.5em) {
-  .blog .page-wrap main .sidebar {
+  .blog .page-wrap main .sidebar, .archive .page-wrap main .sidebar {
     margin-top: 2.5rem; } }
 
 .single .page-wrap.responsive-gutter {
