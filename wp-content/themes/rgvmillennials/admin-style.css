@@ -1,5 +1,5 @@
 html, body {
-	background:#ffffff;
+	background:#eeeeee;
 }
 
 /* links & link interactions */
@@ -22,7 +22,7 @@ a { color:#444444; }
 #adminmenu {
 	margin-top:0px;
 	padding:10px 0px 0px 15px;
-	background:#fff;
+	background:#eeeeee;
 	box-sizing:border-box;
 }
 
@@ -259,6 +259,10 @@ table.wp-list-table tfoot {
 }
 
 /* post.php */
+
+#wp-content-editor-tools {
+	background:#eeeeee!important;
+}
 
 .nf-insert-form {
 	display:none!important;
