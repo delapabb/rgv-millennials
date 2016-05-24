@@ -4,7 +4,7 @@
 
 			<main class="row">
 
-				<div class="small-12 xxxlarge-8 column">
+				<div class="small-12 xxxlarge-9 column">
 
 					<div class="column row">
 						<header>
@@ -41,7 +41,7 @@
 
 				</div>
 
-				<div class="small-12 xxxlarge-4 column">
+				<div class="small-12 xxxlarge-3 column">
 
 					<?php get_template_part('sidebar'); ?>
 

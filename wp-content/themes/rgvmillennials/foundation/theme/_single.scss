@@ -13,8 +13,9 @@
 					margin-top:$normal-rem;
 				}
 			}
-			h1 {
+			h1, h2 {
 				margin-top:$normal-rem;
+				font-weight:700;
 				@include breakpoint(xxxlarge) {
 					margin-top:$large-rem;
 				}
