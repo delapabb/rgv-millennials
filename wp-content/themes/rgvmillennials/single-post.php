@@ -6,7 +6,7 @@
 
 			<main class="row">
 
-				<div class="small-12 xxxlarge-8 column">
+				<div class="small-12 xxxlarge-9 column">
 
 					<article>
 
@@ -34,13 +34,24 @@
 
 						        	$images = get_sub_field('images');
 
-						        	if( $images ):
+						        	if( $images ): ?>
 
-						        		foreach( $images as $image ):
+						        		<div class="flexslider">
+						        			<ul class="slides">
 
-						        			echo '<img src="' . $image['url'] . '" >';
+												<?php
 
-						        		endforeach;
+								        		foreach( $images as $image ):
+
+								        			echo '<li><img src="' . $image['sizes']['large'] . '" ></li>';
+
+								        		endforeach; ?>
+
+						        			</ul>
+
+						        		</div>
+
+						        	<?php
 
 						        	endif;
 
@@ -68,7 +79,7 @@
 
 				</div>
 
-				<div class="small-12 xxxlarge-4 column">
+				<div class="small-12 xxxlarge-3 column">
 
 					<?php get_template_part('sidebar'); ?>
 

@@ -9,6 +9,7 @@ var sassPaths = [
 var jsPaths = [
   'bower_components/jquery/dist/jquery.js',
   'thirdparty/slidebars/slidebars.js',
+  'thirdparty/flexslider/jquery.flexslider-min.js',
   'js/app.js'
 ];
 

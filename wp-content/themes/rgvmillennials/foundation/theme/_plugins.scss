@@ -1,0 +1,46 @@
+.flexslider {
+    margin: 0 0 60px;
+    background: $black;
+    border: none;
+    position: relative;
+    zoom: 1;
+    border-radius: 0px;
+}
+
+.flex-direction-nav a::before {
+  display:none;
+}
+
+.flex-direction-nav .flex-prev {
+    left: 0px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 0px;
+}
+
+.flex-direction-nav a {
+  background:url('images/millennial-rays-02.png') $primary-color;
+  position:absolute;
+  top:50%;
+  padding:10px;
+  color:$black;
+  font-weight:700;
+}
+
+.flex-next {
+  right:0;
+}
+
+@media (max-width:600px) {
+  .flex-direction-nav a {
+    bottom:0;
+    top:auto!important;
+    width:50%;
+  }
+  .flex-direction-nav .flex-next {
+    text-align:right;
+    border-left:1px solid $black;
+  }
+}
