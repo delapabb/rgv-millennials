@@ -2,7 +2,7 @@
 
 	<div class="page-wrap">
 
-		<div class="hero" style="background:url('<?php echo get_template_directory_uri(); ?>/images/hero-image.jpg');">
+		<div class="hero" style="background:url('<?php echo get_template_directory_uri(); ?>/images/hero-image-02.jpg');">
 			<div class="row">
 				<div class="small-12 columns">
 					<img class="rgvm-logo" src="<?php echo get_template_directory_uri(); ?>/images/rgvm-logo.svg" alt="RGV Millennials">
