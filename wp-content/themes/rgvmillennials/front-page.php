@@ -7,7 +7,7 @@
 				<div class="small-12 columns">
 					<img class="rgvm-logo" src="<?php echo get_template_directory_uri(); ?>/images/rgvm-logo.svg" alt="RGV Millennials">
 					<div class="tagline">
-						<p>RGV Millennials is an affinity group of United Way of Southern Cameron County led by young adults across the Rio Grande Valley promoting hands-on regional advancement of public polilcy, social progress, entrepreneurship, and education.</p>
+						<p>RGV Millennials is an affinity group of United Way of Southern Cameron County led by young adults across the Rio Grande Valley promoting hands-on regional advancement of public policy, social progress, entrepreneurship, and education.</p>
 					</div>
 				</div>
 			</div>
