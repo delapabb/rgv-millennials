@@ -110,17 +110,7 @@
 					</div>
 				</div>
 				<div class="small-12 xxxlarge-3 columns">
-					<div class="reach-out">
-						<aside>
-							<header>
-								<h2>Reach Out</h2>
-							</header>
-							<div class="links">
-								<a class="button" href="<?php echo site_url(); ?>/contact/">Send Us A Message</a>
-								<a class="button" href="https://www.facebook.com/rgvmillennials" target="_blank">Facebook</a>
-							</div>
-						</aside>
-					</div>
+					<?php get_template_part('sidebar'); ?>
 				</div>
 			</div>
 		</section>
